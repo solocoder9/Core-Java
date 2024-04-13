@@ -4,6 +4,6 @@ public class Test2 {
         // The append method is used to add more content
         // to the existing character sequence (StringBuffer)
         sb.append("World!");
-        System.out.println(sb); // SoloSuv (Mutable)
+        System.out.println(sb); // Hello, World! (Mutable)
     }
 }

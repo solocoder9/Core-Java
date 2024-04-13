@@ -4,6 +4,6 @@ public class Test {
         // The concat method is used to concatenate more content to the
         // existing character sequence (String)
         s.concat("World!");
-        System.out.println(s); // Solo (Immutable)
+        System.out.println(s); // Hello,  (Immutable)
     }
 }
