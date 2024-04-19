@@ -1,13 +1,4 @@
 Throwable
-├── Error
-│   ├── AssertionError
-│   ├── LinkageError
-│   │   ├── ExceptionInInitializerError
-│   │   ├── NoClassDefFoundError
-│   │   └── UnsatisfiedLinkError
-│   └── VirtualMachineError
-│       ├── OutOfMemoryError
-│       └── StackOverflowError
 └── Exception
     ├── IOException (Checked)
     │   ├── EOFException
@@ -25,3 +16,12 @@ Throwable
     │   ├── NullPointerException
     │   └── UnsupportedOperationException
     └── InterruptedException (Checked)
+└── Error
+    ├── AssertionError
+    ├── LinkageError
+    │   ├── ExceptionInInitializerError
+    │   ├── NoClassDefFoundError
+    │   └── UnsatisfiedLinkError
+    └── VirtualMachineError
+        ├── OutOfMemoryError
+        └── StackOverflowError
