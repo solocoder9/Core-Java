@@ -1,10 +1,10 @@
 Throwable
 └── Exception
-    ├── IOException (Checked)
+    ├── IOException (Checked Exception)
     │   ├── EOFException
     │   ├── FileNotFoundException
     │   └── SocketException
-    ├── RuntimeException (Unchecked)
+    ├── RuntimeException (Unchecked Exception)
     │   ├── ArithmeticException
     │   ├── ArrayIndexOutOfBoundsException
     │   ├── ClassCastException
@@ -15,8 +15,8 @@ Throwable
     │   │   └── StringIndexOutOfBoundsException
     │   ├── NullPointerException
     │   └── UnsupportedOperationException
-    └── InterruptedException (Checked)
-└── Error
+    └── InterruptedException ( Checked Exception)
+└── Error (Unchecked Exception)
     ├── AssertionError
     ├── LinkageError
     │   ├── ExceptionInInitializerError
