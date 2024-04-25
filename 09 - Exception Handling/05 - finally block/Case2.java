@@ -4,13 +4,18 @@ public class Case2 {
             System.out.println("try");
             System.out.println(100/0); // AE
         } catch(ArithmeticException e) {
-            System.out.println("Exception");
+            System.out.println("catch");
         } finally {
             System.out.println("finally");
         }
     }
 }
 /* 
-If there is an exception raised, and it is handled, the finally block
-will be executed.
+Output:-
+try
+catch
+finally
+
+If there is an exception raised, the finally block will be executed,
+even if the exception is handled.
 */

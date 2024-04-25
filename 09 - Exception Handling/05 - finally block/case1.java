@@ -3,12 +3,16 @@ public class Case1 {
         try {
             System.out.println("try");
         } catch(Exception e) {
-            System.out.println("Exception");
+            System.out.println("catch");
         } finally {
             System.out.println("finally");
         }
     }
 }
 /* 
+Output:- 
+try
+finally
+
 If there is no exception, the finally block will be executed.
 */
