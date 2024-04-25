@@ -1,8 +1,9 @@
-public class Case1 {
+public class Case2 {
     public static void main(String[] args) {
         try {
             System.out.println("try");
-        } catch(Exception e) {
+            System.out.println(100/0); // AE
+        } catch(ArithmeticException e) {
             System.out.println("Exception");
         } finally {
             System.out.println("finally");
@@ -10,5 +11,6 @@ public class Case1 {
     }
 }
 /* 
-If there is no exception, the finally block will be executed.
+If there is an exception raised, and it is handled, the finally block
+will be executed.
 */
