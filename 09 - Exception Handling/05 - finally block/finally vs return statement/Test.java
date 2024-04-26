@@ -11,6 +11,10 @@ public class Test {
     }
 }
 /* 
+Output: 
+try
+finally
+
 Even though a return statement is inside a try block, the finally block
 will be executed first, and then the return statement will be considered.
 */
