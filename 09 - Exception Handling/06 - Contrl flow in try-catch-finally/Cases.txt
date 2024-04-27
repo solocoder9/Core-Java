@@ -1,0 +1,60 @@
+Code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    try {
+        statement-1;
+        statement-2;
+        statement-3;
+    } catch(xxx e) {
+        statement-4;
+    } finally {
+        statement-5;
+    }
+    statement-6;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Case 1
+------
+- If there is no exception.
+O/P:
+    statement-1
+    statement-2
+    statement-3
+    statement-5
+    statement-6
+    (Normal termination)
+
+
+Case 2
+------
+- If an exception is raised at statement-2 and the corresponding
+  catch block is matched.
+O/P:
+    statement-1
+    statement-4
+    statement-5
+    statement-6
+    (Normal termination)
+
+
+Case 3
+------
+- If an exception is raised at statement-2 and the corresponding
+  catch block is not matched.
+O/P:
+    statement-1
+    statement-5
+    (Abnormal termination)
+
+
+Case 4
+------
+- If exception raised at statement-4
+O/P:
+    (Abnormal termination)
+    but before termination, the finally block will execute.
+
+
+Case 5
+------
+- If an exception raised at statement-5 or statement-6
+    (Abnormal termination)
