@@ -15,7 +15,7 @@ Code
 Case 1
 ------
 - If there is no exception.
-O/P:
+Exicution:
     statement-1
     statement-2
     statement-3
@@ -28,7 +28,7 @@ Case 2
 ------
 - If an exception is raised at statement-2 and the corresponding
   catch block is matched.
-O/P:
+Exicution:
     statement-1
     statement-4
     statement-5
@@ -40,7 +40,7 @@ Case 3
 ------
 - If an exception is raised at statement-2 and the corresponding
   catch block is not matched.
-O/P:
+Exicution:
     statement-1
     statement-5
     (Abnormal termination)
@@ -49,7 +49,7 @@ O/P:
 Case 4
 ------
 - If exception raised at statement-4
-O/P:
+Exicution:
     (Abnormal termination)
     but before termination, the finally block will execute.
 
@@ -57,4 +57,5 @@ O/P:
 Case 5
 ------
 - If an exception raised at statement-5 or statement-6
+Exicution:
     (Abnormal termination)

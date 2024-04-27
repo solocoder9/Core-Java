@@ -14,7 +14,7 @@ statement-5;
 Case 1
 ------
 - If there is no exception.
-O/P:
+Exicution:
     statement-1
     statement-2
     statement-3
@@ -26,7 +26,7 @@ Case 2
 ------
 - If an exception is raised at statement-2 and the corresponding
   catch block is matched.
-O/P:
+Exicution:
     statement-1
     statement-4
     statement-5
@@ -37,7 +37,7 @@ Case 3
 ------
 - If an exception is raised at statement-2 and the corresponding
   catch block is not matched.
-O/P:
+Exicution:
     statement-1
     (Abnormal termination)
 
@@ -45,7 +45,7 @@ O/P:
 Case 4
 ------
 - If exception raised at statement-4 or statement-5
-O/P:
+Exicution:
     statement-5
     (Abnormal termination)
 
