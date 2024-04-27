@@ -1,0 +1,227 @@
+Code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    try {
+        statement-1;
+        statement-2;
+        statement-3;
+        try {
+            statement-4;
+            statement-5;
+            statement-6;
+        } catch (xxx e) {
+            statement-7;
+        } finally {
+            statement-8;
+        }
+        statement-9;
+    } catch(yyy e) {
+        statement-10;
+    } finally {
+        statement-11;
+    }
+    statement-12;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Case 1
+------
+- If there is no exception.
+Exicution:
+    statement-1
+    statement-2
+    statement-3
+    statement-4
+    statement-5
+    statement-6
+    statement-8
+    statement-9
+    statement-11
+    statement-12
+    (Normal termination)
+
+
+Case 2
+------
+- If an exception is raised at statement-2 and the corresponding
+  catch block is matched.
+Exicution:
+    statement-1
+    statement-10
+    statement-11
+    statement-12
+    (Normal termination)
+
+
+Case 3
+------
+- If an exception is raised at statement-2 and the corresponding
+  catch block is not matched.
+Exicution:
+    statement-1
+    statement-11
+    (Abnormal termination)
+
+
+Case 4
+------
+- If exception raised at statement-5 and corresponding inner catch
+  block matched.
+Exicution:
+    statement-1
+    statement-2
+    statement-3
+    statement-4
+    statement-7
+    statement-8
+    statement-9
+    statement-11
+    statement-12
+    (Normal termination)
+
+
+Case 5
+------
+- If an exception raised at statement-5 and inner catch block not
+  matched but outer catch block matched.
+Exicution:
+    statement-1
+    statement-2
+    statement-3
+    statement-4
+    statement-8
+    statement-10
+    statement-11
+    statement-12
+    (Normal termination)
+
+
+Case 6
+------
+- If an exception raised at statement-5 and both inner and outer
+  catch block not matched.
+Exicution:
+    statement-1
+    statement-2
+    statement-3
+    statement-4
+    statement-8
+    statement-11
+    (Abormal termination)
+
+
+Case 7
+------
+- If an exception raised at statement-7 and corresponding catch 
+  block matched.
+Exicution:
+    statement-1
+    statement-2
+    statement-3
+    statement-x (4) (may or may not)
+    statement-x (5) (may or may not)
+    statement-x (6) (may or may not)
+    statement-8
+    statement-10
+    statement-11
+    statement-12
+    (Normal termination)
+
+
+Case 8
+------
+- If an exception raised at statement-7 and corresponding catch 
+  block not matched.
+Exicution:
+    statement-1
+    statement-2
+    statement-3
+    statement-x (4)
+    statement-x (5)
+    statement-x (6)
+    statement-8
+    statement-11
+    (Abnormal termination)
+
+
+Case 9
+------
+- If an exception raised at statement-8 and corresponding catch 
+  block matched(outer).
+Exicution:
+    statement-1
+    statement-2
+    statement-3
+    statement-x (4)
+    statement-x (5)
+    statement-x (6)
+    statement-x (7)
+    statement-10
+    statement-11
+    statement-12
+    (Normal termination)
+
+
+Case 10
+-------
+- If an exception raised at statement-8 and corresponding catch 
+  block not matched(outer).
+Exicution:
+    statement-1
+    statement-2
+    statement-3
+    statement-x (4)
+    statement-x (5)
+    statement-x (6)
+    statement-x (7)
+    statement-11
+    (Abnormal termination)
+
+
+Case 11
+-------
+- If an exception raised at statement-9 and corresponding catch 
+  block matched.
+Exicution:
+    statement-1
+    statement-2
+    statement-3
+    statement-x (4)
+    statement-x (5)
+    statement-x (6)
+    statement-x (7)
+    statement-8
+    statement-10
+    statement-11
+    statement-12
+    (Normal termination)
+
+
+Case 12
+-------
+- If an exception raised at statement-9 and corresponding catch 
+  block not matched.
+Exicution:
+    statement-1
+    statement-2
+    statement-3
+    statement-x (4)
+    statement-x (5)
+    statement-x (6)
+    statement-x (7)
+    statement-8
+    statement-11
+    (Abnormal termination)
+
+
+Case 13
+-------
+- If an exception raised at statement-10.
+Exicution:
+    (Abnormal termination)
+    but before termination finally block will be exicuted
+
+
+Case 14
+-------
+- If an exception raised at statement-11 or statement-12.
+Exicution:
+    (Abnormal termination)
