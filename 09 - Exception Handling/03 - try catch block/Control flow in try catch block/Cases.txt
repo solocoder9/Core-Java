@@ -1,0 +1,56 @@
+Code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    try {
+    statement-1;
+    statement-2;
+    statement-3;
+} catch (xxx e) {
+    statement-4
+}
+statement-5;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Case 1
+------
+- If there is no exception.
+O/P:
+    statement-1
+    statement-2
+    statement-3
+    statement-5
+    (Normal termination)
+
+
+Case 2
+------
+- If an exception is raised at statement-2 and the corresponding
+  catch block is matched.
+O/P:
+    statement-1
+    statement-4
+    statement-5
+    (Normal termination)
+
+
+Case 3
+------
+- If an exception is raised at statement-2 and the corresponding
+  catch block is not matched.
+O/P:
+    statement-1
+    (Abnormal termination)
+
+
+Case 4
+------
+- If exception raised at statement-4 or statement-5
+O/P:
+    statement-5
+    (Abnormal termination)
+
+================================================================
+Note:
+- Inside a try block, if an exception is raised, the rest of the
+  try block's code will not be executed, even if the exception
+  is caught and handled.
