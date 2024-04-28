@@ -1,0 +1,164 @@
+Various possible combination of try-catch-finally
+-------------------------------------------------
+1)
+
+try {
+    
+} 
+S.o.p("Hello");
+catch (x e) {
+
+}
+
+(Invalid)
+CE1: try without catch or finally
+CE2: catch without try
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2)
+
+try {
+
+} catch (x e) {
+
+}
+S.o.p("Hell");
+catch (y e) {
+
+}
+
+(Invalid)
+CE: catch without try
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3)
+
+try {
+
+} catch (x e) {
+
+}
+S.o.p("Hello");
+finally {
+
+}
+
+(Invlaid)
+CE: finally without try
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4)
+
+try {
+    try {
+
+    } catch (x e) {
+
+    }
+}
+catch (y e) {
+
+}
+
+(Valid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5)
+
+try {
+    try {
+
+    } catch (x e) {
+
+    }
+} 
+catch (x e) {
+
+}
+
+(Valid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6)
+
+try {
+    try {
+
+    }
+} catch (x e) {
+
+}
+
+(Invalid)
+CE: try without catch or finally
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7)
+
+try {
+
+} catch (x e) {
+    try {
+
+    } catch (x e) {
+
+    }
+}
+
+(Valid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+8)
+
+try {
+
+} catch (x e) {
+
+} finally {
+    try {
+
+    } catch (x e) {
+
+    } finally {
+
+    }
+}
+
+(Valid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9)
+
+try 
+   S.o.p("try"); 
+catch (x e) {
+    S.o.p("catch");
+}
+
+(Invalid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+10)
+
+try {
+    S.o.p("try");
+} 
+catch (x e)
+    S.o.p("catch");
+
+(Invalid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11)
+
+try {
+
+} catch (x e) {
+
+}
+finally 
+    S.o.p("finally");
+
+(Invalid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
