@@ -4,7 +4,7 @@ public class Test2 {
             System.out.println("Outer try block");
             try {
                 System.out.println("Inner try block");
-                System.out.println(100/0); //AE
+                System.out.println(100/0); // AE
             } catch (NullPointerException e) {
                 System.out.println("Inner catch block");
             }
