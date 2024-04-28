@@ -1,0 +1,169 @@
+Various possible combination of try-catch-finally
+-------------------------------------------------
+1)
+
+try {
+
+} catch (x e) {
+
+}
+
+(Valid)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2)
+
+try {
+
+} catch (x e) {
+
+} catch (y e) {
+
+}
+
+(Valid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3)
+
+try {
+
+} catch (x e) {
+
+} catch (x e) {
+
+}
+
+(Invalid)
+Exception x has already been cought
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4)
+
+try {
+
+} catch (x e) {
+
+} finally {
+
+}
+
+(Valid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5)
+
+try {
+
+} catch (x e) {
+
+} try {
+    
+} catch (x e) {
+
+}
+
+(Valid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6) 
+
+try {
+
+} finally {
+
+}
+
+(Valid)
+Abnormal termination
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7) 
+
+try {
+    
+}
+
+(Invalid)
+CE: try without catch or finally
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+8)
+
+catch {
+
+}
+
+(Invalid) 
+CE: catch without try
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9)
+
+finally {
+
+}
+
+(Invalid) 
+CE: finally without try
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+10)
+
+try {
+
+} finally {
+
+} catch (x e) {
+
+}
+
+(Invalid) 
+CE: catch without try
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+11)
+
+try {
+
+} try {
+
+} catch (x e) {
+
+} finally {
+
+}
+
+(Invalid) 
+CE: try without catch or finally
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+12) 
+
+try {
+
+} catch (x e) {
+
+} catch (y e) {
+
+}
+
+(Valid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+13)
+
+try {
+
+} catch (x e) {
+
+} finally {
+
+} finally {
+
+}
+
+(Invalid)
+CE: finally without try
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
