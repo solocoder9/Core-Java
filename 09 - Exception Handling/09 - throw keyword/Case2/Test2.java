@@ -6,7 +6,7 @@ public class Test2 {
 }
 
 /* 
-Runtime Error:-
+Compile-time Error:-
 Test.java:4: error: unreachable statement
         System.out.println("Hello");
 
