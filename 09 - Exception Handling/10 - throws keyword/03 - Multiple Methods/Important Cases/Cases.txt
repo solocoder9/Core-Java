@@ -1,0 +1,121 @@
+Case - 1
+--------
+
+class Test throws Exception {
+    
+    Test() throws Exception {
+
+    }
+
+    public void m1() throws Exception {
+
+    }
+}
+
+-> throws keyword for method - Valid
+-> throws keyword for constructor - Valid
+-> throws keyword for class - Invalid
+
+
+========================================================
+
+Case - 2
+--------
+
+class Test {
+    public stati void main(String[] args) throws Test {
+
+    }
+}
+
+Compile-time Error:-
+error: incompatible types: Test cannot be converted to Throwable
+
+to avoid this Error we can use-
+class Test extends Throwable/Exception {
+
+}
+
+Note:- we can throw keyword only for Throwable type
+
+========================================================
+Case - 3
+--------
+
+class Test {
+    pubic static void main(String[] args) {
+        throw new Exception();
+    }
+}
+
+Compile-time Error(unchecked);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+class Test {
+    public static void main(String[] args) {
+        throw new Error();
+    }
+}
+
+Compiler Successfully, but
+Run-time Exception.
+
+========================================================
+Case 4
+
+try {
+    S.o.p("Hello");
+} catch (ArithmeticException e) {
+
+}
+
+Compile: Successfully
+type : unchecked
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+try {
+    S.o.p("Hello");
+} catch (Exception e) {
+
+}
+
+Compile: Successfully
+type: Partially checked
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+try {
+    S.o.p("Hello");
+} catch (IOException e) {
+
+}
+
+Compile: Compile-time Error
+type: fully checked
+desc: error: IOException is never raised in the try block
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+try {
+    S.o.p("Hello");
+} catch (InterruptedException e) {
+
+}
+
+Compile: Compile-time Error
+type: fully checked
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+try {
+    S.o.p("Hello");
+} catch (Error e) {
+
+}
+
+Compile: Successfully
+type: unchecked
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+=====================================================================
+Note:-
+- Within the try block if there is no chance of raiseing exceptio, we 
+  can not write catch block for that exception. other wise we'll get 
+  compile-time error.
