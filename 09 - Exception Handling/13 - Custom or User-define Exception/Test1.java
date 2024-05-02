@@ -13,8 +13,10 @@ class TooYoungException extends RuntimeException {
 }
 public class Test1 {
     public static void main(String[] args) {
+
+        System.out.println("Welcome to Indian Matrimony\n");
+        
         Scanner sc = new Scanner(System.in);
-        //int age = Integer.parseInt(args[0]);
         System.out.print("Enter you age: ");
         int age = sc.nextInt();
 
@@ -32,11 +34,11 @@ public class Test1 {
 Output:-
 age: 80
 Exception in thread "main" TooOldException: Your age is alredy crossed marriage age
-        at Test1.main(Test1.java:22)
+        at Test1.main(Test1.java:24)
 
 age: 15
 Exception in thread "main" TooYoungException: Your age is below 18, Please wait some more time
-        at Test1.main(Test1.java:24)
+        at Test1.main(Test1.java:26)
 
 age: 25
 Thanks for Registration
