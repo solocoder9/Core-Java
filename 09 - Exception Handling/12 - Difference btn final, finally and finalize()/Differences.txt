@@ -1,0 +1,26 @@
+Difference between final, finally and finalize()
+------------------------------------------------
+1> final
+--------
+- In java, final is a non-access modifier.
+- It can be used with variables, methods, and classes to indicate
+  they can not be changed or overridden.
+
+
+2> finally
+----------
+- In java, finally block is used to exicute clean up code.
+- It is used in exception handling to ensure that certain clean up 
+  task are perfomed, such as closing resourses(e.g. file or database connections)
+  that were opened in a 'try' block.
+- Basically, It is meant for cleaning up resources opened in the try-block.
+
+
+3> finalize()
+-------------
+- In java, finalize() is a method provided by the 'Object' class that is called
+  by Garbage Collector before it frees the memory occupied by an object that is
+  no longer reachable or needed.
+- In other words, Before destroying an object, the garbage collector calls the finalize()
+  method to perform cleanup activities.
+- Basically, It is meant for performing cleanup activities related to an object.
