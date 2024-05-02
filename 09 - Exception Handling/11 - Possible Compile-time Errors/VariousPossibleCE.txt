@@ -1,0 +1,11 @@
+Various possible compile-time error in Exception Handling
+---------------------------------------------------------
+1> try without catch or finally
+2> catch without try
+3> finally without try
+4> unreported exception XXX; must be caught or declare to be thrown.
+5> Exception xxx is never thrown in body of corresponding
+   try statement.  
+6> Exception XXX has already been caught
+7> unreachable statement
+8> incompartable types: Test cannot be converted to Throwable
