@@ -17,10 +17,12 @@ ArrayIndexOutOfBoundsException
  of an array that is outside the bound of the array.
 - In other words, you're trying to access an element at an index that is
   either negetive or greater than or equal to the length of the array.
+- Hierarchy:-
 
-  Throwable
-    ├── Exception
-    │   └── RuntimeException
-    │       └── IndexOutOfBoundsException
-    │           └── ArrayIndexOutOfBoundsException
+    Throwable
+      └── Exception
+            └── RuntimeException
+                 └── IndexOutOfBoundsException
+                         └── ArrayIndexOutOfBoundsException
+
 */
