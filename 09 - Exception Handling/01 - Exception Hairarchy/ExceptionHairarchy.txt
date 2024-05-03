@@ -16,7 +16,7 @@ Throwable
     │   ├── NullPointerException
     │   └── UnsupportedOperationException
     └── InterruptedException ( Checked Exception)
-└── Error (Unchecked Exception)
+└── Error (Unchecked Error)
     ├── AssertionError
     ├── LinkageError
     │   ├── ExceptionInInitializerError
