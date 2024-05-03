@@ -47,4 +47,6 @@ Thanks for Registration
 - In this code, the super(msg) calls in the custom exception classes pass the message to their superclasses. 
   This message is then eventually passed to the Throwable class, and since Throwable does not have handling 
   code, the JVM uses the default exception handler to print the exception stack trace using the printStackTrace() method.
+
+- TooOldException and TooYoungException both extend RuntimeException, making them unchecked exceptions.
 */
