@@ -1,7 +1,7 @@
 public class Test {
     public static void main(String[] args) {
         int i = Integer.parseInt("10");
-        int i = Integer. parseInt("ten");
+        int j = Integer. parseInt("ten");
     }
 }
 
@@ -17,8 +17,9 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "t
 NumberFormatException
 ---------------------
 - It is an exception in Java that occurs when a method attempts to convert a string to one of the 
-  numeric types, but the string is not a valid representation of a number. This typically happens 
-  when using methods like parseInt() or valueOf() in the Integer, Double, or other wrapper classes.
+  numeric types, but the string is not a valid representation of a number. 
+- This typically happens when using methods like parseInt() or valueOf() in the Integer, Double, or 
+  other wrapper classes.
 - Hierarchy:-
 
     Throwable
