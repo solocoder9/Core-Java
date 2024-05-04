@@ -30,7 +30,7 @@ ClassCastException
   its actual type. 
 - This typically happens when you try to cast an object of a class to a subclass of 
   that class, or when casting between incompatible types in the class hierarchy.
-- Hierarchi:-
+- Hierarchy:-
 
     Throwable
         └── Exception
