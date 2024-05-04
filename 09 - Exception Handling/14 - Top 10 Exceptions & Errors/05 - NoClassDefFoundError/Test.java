@@ -29,8 +29,9 @@ Caused by: java.lang.ClassNotFoundException: Demo
 - Hierarchy:-
 
     Throwable
-        └── Error
-            └── NoClassDefFoundError
+      └── Error
+            └── LinkageError
+                  └── NoClassDefFoundError
 
 
 */
