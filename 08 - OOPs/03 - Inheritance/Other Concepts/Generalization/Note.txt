@@ -8,3 +8,9 @@ Generalization
   multiple classes into a single, more abstract class.
 - It promoting code reusability and maintainability.
 - we can achive generalization by using extends keword(Inheritance).
+
+  Example:-
+  Consider a superclass Vehicle that represents common attributes and behaviors of 
+  different types of vehicles, such as cars, bikes, and trucks. Each specific type 
+  of vehicle can then be represented by a subclass that inherits from the Vehicle 
+  class and adds its own unique attributes and behaviors.
