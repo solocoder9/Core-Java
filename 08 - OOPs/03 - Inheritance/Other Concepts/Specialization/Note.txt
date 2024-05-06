@@ -1,0 +1,13 @@
+Specialization
+--------------
+- This is the opposite of generalization. 
+- It involves creating specialized subclasses from a more general superclass. 
+- Specialization allows you to define classes that are more specific and detailed, 
+  inheriting common attributes and behaviors from the superclass while adding their 
+  own unique features.
+
+  Example:-
+  Using the previous example, the Car, Bike, and Truck classes would be considered 
+  specialized subclasses of the Vehicle superclass. Each subclass inherits the common
+  attributes and behaviors from Vehicle and adds its own specific properties, such as 
+  numWheels for Car and Bike, and cargoCapacity for Truck.

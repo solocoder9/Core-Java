@@ -1,64 +1,38 @@
 // General superclass
-class Vehicle {
-    protected String brand;
-    protected int year;
-
-    public Vehicle(String brand, int year) {
-        this.brand = brand;
-        this.year = year;
+class Animal {
+    public void eat() {
+        System.out.println("Animal is eating.");
     }
 
-    public void display() {
-        System.out.println("Brand: " + brand);
-        System.out.println("Year: " + year);
+    public void makeSound() {
+        System.out.println("Animal makes a sound.");
     }
 }
 
 // Specialized subclass
-class Car extends Vehicle {
-    private int numDoors;
-
-    public Car(String brand, int year, int numDoors) {
-        super(brand, year);
-        this.numDoors = numDoors;
-    }
-
+class Dog extends Animal {
     @Override
-    public void display() {
-        super.display();
-        System.out.println("Number of doors: " + numDoors);
+    public void makeSound() {
+        System.out.println("Dog is barking.");
     }
 }
 
 // Specialized subclass
-class Bike extends Vehicle {
-    private boolean hasBasket;
-
-    public Bike(String brand, int year, boolean hasBasket) {
-        super(brand, year);
-        this.hasBasket = hasBasket;
-    }
-
+class Cat extends Animal {
     @Override
-    public void display() {
-        super.display();
-        System.out.println("Has basket: " + hasBasket);
+    public void makeSound() {
+        System.out.println("Cat is meowing.");
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Vehicle vehicle = new Vehicle("Generic", 2022);
-        vehicle.display();
+        Animal dog = new Dog();
+        dog.eat();        // Inherited from Animal
+        dog.makeSound();  // Specific to Dog
 
-        System.out.println();
-
-        Car car = new Car("Toyota", 2020, 4);
-        car.display();
-
-        System.out.println();
-
-        Bike bike = new Bike("Giant", 2021, true);
-        bike.display();
+        Animal cat = new Cat();
+        cat.eat();        // Inherited from Animal
+        cat.makeSound();  // Specific to Cat
     }
 }
