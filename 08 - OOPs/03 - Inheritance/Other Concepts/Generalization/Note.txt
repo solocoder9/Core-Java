@@ -1,0 +1,10 @@
+Generalization
+--------------
+- In Java, generalization refers to the concept of creating a superclass to 
+  represent common attributes and behaviors of multiple classes.
+- It involves identifying commonalities among classes and creating a more 
+  general superclass to represent these common characteristics.
+- Generalization allows to factor out shared attributes and behaiors ffrom 
+  multiple classes into a single, more abstract class.
+- It promoting code reusability and maintainability.
+- we can achive generalization by using extends keword(Inheritance).
