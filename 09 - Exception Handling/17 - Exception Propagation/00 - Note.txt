@@ -1,0 +1,10 @@
+Exception Propagation
+---------------------
+- It is an mechanism by which an exception is passed from method to method 
+  up the call stack until it is handled.
+- When an exception occurs in a method, the method creates an exception object 
+  and hands it off to the runtime system. The runtime system then looks for the 
+  handling code for that exception. If the exception is not handled in the current
+  method, it is propagated to the calling method, and this process continues until 
+  either the exception is caught and handled or it reaches the top of the call stack
+  and the program terminates.
