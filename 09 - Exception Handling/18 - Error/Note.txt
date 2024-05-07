@@ -1,0 +1,22 @@
+Error
+-----
+- An error in Java is a subclass of Throwable that represents serious problems 
+  that are typically beyond the control of the application, indicating issues 
+  in the JVM or the environment.
+- In other words, an error is a type of Throwable that indicates serious problems 
+  that a reasonable application should not try to catch. 
+- Errors are typically used to indicate errors in the Java Virtual Machine (JVM) 
+  itself or in the environment in which the JVM is running. Errors are not meant 
+  to be caught or handled by regular Java programs, as they usually signify 
+  irrecoverable problems.
+
+Types of Error
+~~~~~~~~~~~~~~
+    1> VirtualMachineError
+        - StackOverflowError
+        - OutOfMemoryError
+    2> LinkageError
+        - NoClassDefFoundError
+        - ExceptionInInitializerError
+        - UnsatisfiedLinkError
+    3> AssertionError
