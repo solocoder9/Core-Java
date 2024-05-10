@@ -9,4 +9,4 @@
 - Collection framework is a set of interfaces, classes and algorithms
   provided by java to manipulate and store group of objects efficiently.
 - It offers a standard way to work with collections, macking it easier
-  for defelopers to write code that is more robust, reusable, and mantainable.
+  for defelopers to write code that is more robust, reusable, and maintainable.
