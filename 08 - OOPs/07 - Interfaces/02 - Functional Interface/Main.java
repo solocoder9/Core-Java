@@ -25,4 +25,5 @@ Functional Interface
 - It can have multiple default or static methods, but it must have exactly one abstract method.
 - Functional interfaces are used to enable functional programming in Java, particularly with 
   lambda expressions and method references.
+- Introduced in Java 8
 */
