@@ -1,0 +1,51 @@
+1. int size(): 
+   Returns the number of elements in the list.
+
+2. boolean isEmpty(): 
+   Returns true if the list contains no elements.
+
+3. boolean contains(Object o): 
+   Returns true if the list contains the specified element.
+
+4. E get(int index): 
+   Returns the element at the specified position in the list.
+
+5. E set(int index, E element): 
+   Replaces the element at the specified position in the list with the 
+   specified element.
+
+6. boolean add(E e): 
+   Appends the specified element to the end of the list.
+
+7. void add(int index, E element): 
+   Inserts the specified element at the specified position in the list.
+
+8. boolean remove(Object o): 
+   Removes the first occurrence of the specified element from the list, 
+   if it is present.
+
+9. E remove(int index): 
+   Removes the element at the specified position in the list.
+
+10. void clear(): 
+    Removes all elements from the list.
+
+11. int indexOf(Object o): 
+    Returns the index of the first occurrence of the specified element in 
+    the list, or -1 if the list does not contain the element.
+
+12. int lastIndexOf(Object o): 
+    Returns the index of the last occurrence of the specified element in 
+    the list, or -1 if the list does not contain the element.
+
+13. List<E> subList(int fromIndex, int toIndex): 
+    Returns a view of the portion of the list between the specified fromIndex, 
+    inclusive, and toIndex, exclusive.
+
+14. boolean addAll(Collection<? extends E> c): 
+    Appends all of the elements in the specified collection to the end of the list, 
+    in the order that they are returned by the specified collection's iterator.
+
+15. boolean addAll(int index, Collection<? extends E> c): 
+    Inserts all of the elements in the specified collection into the list at the 
+    specified position.
