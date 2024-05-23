@@ -13,3 +13,49 @@ Collection Framework
 - It offers a standard way to work with collections, macking it easier
   for defelopers to write code that is more robust, reusable, and maintainable.
 
+
+Important Interfaces of Collection Framework
+--------------------------------------------
+    1> Iterable
+    2> Collection
+    3> List
+    4> Queue
+    5> Deque
+    6> Set 
+    7> SortedSet
+    8> Map
+    9> SortedMap
+    10> Iterator
+
+
+Important Implementation Classes of Collection Framework
+--------------------------------------------------------
+    1> ArrayList
+    2> LinkedList
+    3> Vector
+    4> Stack
+    5> PriorityQueue
+    6> HashSet
+    7> LinkedHashSet
+    8> TreeSet
+    9> HashMap
+    10> HashTable
+    11> TreeMap
+
+
+Utility Clases of Collection Framework
+--------------------------------------
+    1> Collections
+    2> ArrayList
+
+
+Types of Collection
+-------------------
+    1> List
+    2> Queue
+    3> Set
+
+
+Additional Collection
+---------------------
+    1> Map
