@@ -1,12 +1,15 @@
-1) What is Collection?
+Collection
+----------
 - In java, a collection refers to a group of objects that are gathered
   to a single unit or single entity.
 - It provides a way to store, retrive, and manipulate group of objects.
   Objects can be homogeneous or heterogeneous
 
 
-2) What is Collection Framework?
+Collection Framework
+--------------------
 - Collection framework is a set of interfaces, classes and algorithms
   provided by java to manipulate and store group of objects efficiently.
 - It offers a standard way to work with collections, macking it easier
   for defelopers to write code that is more robust, reusable, and maintainable.
+
