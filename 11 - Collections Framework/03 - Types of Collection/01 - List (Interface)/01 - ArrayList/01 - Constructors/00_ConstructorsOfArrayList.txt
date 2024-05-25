@@ -1,0 +1,20 @@
+Constructors of ArrayList
+-------------------------
+
+1> ArrayList() [Default]
+~~~~~~~~~~~~~~~~~~~~~~~~
+- Create an empty ArrayList with an initial capacity of 10.
+- Example:
+    ArrayList al = new ArrayList();
+
+2> ArrayList(int initialCapacity)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Create an empty ArrayList with the specified initial capacity.
+- Example:
+    ArrayList al = new ArrayList(100);
+
+3> ArrayList(Collection c)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Create an ArrayList that contains the elements from the specified Collection.
+- Example:
+    ArrayList al = new ArrayList(Arrays.asList("e1", "e2"));
