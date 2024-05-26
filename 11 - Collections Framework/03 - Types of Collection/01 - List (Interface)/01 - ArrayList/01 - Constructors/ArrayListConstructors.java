@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class ArrayListConstructor {
+public class ArrayListConstructors {
 	public static void main(String[] args) {
 
 		// Using the default constructor
