@@ -1,4 +1,4 @@
-public class Method2 {
+public class Test2 {
     
     // Method to calculate sum of two number
     static int sum(int a, int b) {
