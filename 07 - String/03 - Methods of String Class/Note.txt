@@ -9,5 +9,5 @@ store group of characters.
        ex - String s = new String("java");
 
     2> without Constructor (literals)
-       ex = String s = "Java"
+       ex - String s = "Java"
 
