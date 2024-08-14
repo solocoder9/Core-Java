@@ -3,7 +3,7 @@ Collection
 - In java, a collection refers to a group of objects that are gathered
   to a single unit or single entity.
 - It provides a way to store, retrive, and manipulate group of objects.
-  Objects can be homogeneous or heterogeneous
+  Objects can be homogeneous or heterogeneous.
 
 
 Collection Framework
