@@ -1,9 +1,9 @@
 public class AnonymousArray {
 
     public static void sum(int[] arr) {
-        int total = 0; 
+        int total = 0;
 
-        for (int num: arr) {
+        for (int num : arr) {
             total += num;
         }
 
@@ -13,6 +13,6 @@ public class AnonymousArray {
     public static void main(String[] args) {
 
         // Anonymous array
-        sum(new int[] {10, 20, 30, 40});
+        sum(new int[] { 10, 20, 30, 40 });
     }
 }
