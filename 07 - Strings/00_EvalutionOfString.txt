@@ -1,0 +1,35 @@
+The concept of string immutability in Java led to the development of several classes to handle different string 
+manipulation needs efficiently:
+
+1. String Constant Pool:
+--------------------=
+- The concept of the string constant pool in Java is used to optimize memory usage. String literals are stored 
+  in a pool to avoid creating multiple instances of the same value. This is possible because strings in Java 
+  are immutable, meaning their values cannot be changed once created. This immutability ensures that the same 
+  string literal can be safely reused.
+
+2. String Immutability:
+--------------------
+- Since String objects are immutable, any operation that seems to modify a string actually creates a new String 
+  object. This design choice is beneficial for security, caching, and performance but can be inefficient for 
+  scenarios requiring frequent modifications.
+
+3. StringBuffer:
+-------------
+- To handle mutable strings, Java provides the StringBuffer class. Unlike String, StringBuffer allows modifications 
+  without creating new instances. It is suitable for scenarios where strings are modified frequently. However, 
+  StringBuffer is synchronized, meaning it is thread-safe but may have performance overhead due to this 
+  synchronization.
+
+4. StringBuilder:
+--------------
+- StringBuilder was introduced to address the performance overhead associated with StringBuffer. It provides similar 
+  functionality to StringBuffer but is not synchronized. Therefore, StringBuilder is preferred in single-threaded 
+  environments or scenarios where thread safety is not a concern.
+
+
+Summary
+~~~~~~~
+String: Immutable and stored in the string constant pool for efficiency.
+StringBuffer: Mutable and synchronized, suitable for multi-threaded environments.
+StringBuilder: Mutable and non-synchronized, suitable for single-threaded environments.
