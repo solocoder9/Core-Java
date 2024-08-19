@@ -1,11 +1,11 @@
-public class TwoDarrayDeclaration2 {
+public class TwoDArrayDeclaration2 {
     public static void main(String[] ags) {
 
         // 2D array declaration and initialization in a single line
-        int[][] arr = {{10, 20}, {30, 40, 50}};
+        int[][] arr = { { 10, 20 }, { 30, 40, 50 } };
 
         // print length of the array
-        System.out.println(arr[0].length); //2
+        System.out.println(arr[0].length); // 2
 
         // Print array elements
         for (int i = 0; i < arr.length; i++) {
