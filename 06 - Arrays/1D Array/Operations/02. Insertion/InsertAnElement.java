@@ -1,4 +1,4 @@
-// Insert array element by creating new Array
+// Insert an array element by creating new Array
 
 public class InsertAnElement {
     public static void main(String[] args) {
