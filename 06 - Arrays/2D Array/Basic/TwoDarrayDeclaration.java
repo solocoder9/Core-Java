@@ -1,4 +1,4 @@
-public class TwoDarrayDeclaration {
+public class TwoDArrayDeclaration {
     public static void main(String[] args) {
 
         // 2D arary declaration
@@ -21,6 +21,6 @@ public class TwoDarrayDeclaration {
             }
             System.out.println();
         }
-        
+
     }
 }
