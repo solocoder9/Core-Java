@@ -1,0 +1,20 @@
+String
+------
+- String is an inbuilt class in Java, Part of the java.lang package which is use to store
+  a sequence of characters.
+- Internally, a 'String' is represented as an array of characters.
+- The 'String' class is immutable, meaning once a 'String' object is created, it cannot be 
+  modified.
+- String values are defined useing double quotes("").
+- Example: "Hello, World!"
+
+String object creation
+~~~~~~~~~~~~~~~~~~~~~~
+- A 'String' object can be created in two main ways;
+
+    1> Using Constructor
+       Ex: String s = new String("java");
+
+    2> Using String Literals 
+       Ex: String s = "Java"
+
