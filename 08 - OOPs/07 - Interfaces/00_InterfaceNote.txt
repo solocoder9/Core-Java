@@ -35,7 +35,7 @@ Types of Interface
 - Marker interfaces are typically used to provide metadata about the implementing classes.
 
 4> Single Abstract Method(SAM) Interface
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Single Abstract Method(SAM) interfaces in Java are interfaces that contain exactly one abstract method.
 - They are also known as functional interfaces and are crucial for enabling functional programming features 
   like lambda expressions and method references.
