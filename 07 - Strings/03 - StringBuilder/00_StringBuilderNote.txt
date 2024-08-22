@@ -1,0 +1,43 @@
+StringBuilder
+-------------
+- 'StringBuilder' is a class in Java that provides a way to handle and manipulate string with
+  mutable content. 
+- Unlike 'String', which is immutable, 'StringBuilder' allows you to modify the content of the
+  string without creating new objects for each changes.
+- 'StringBuilder' is efficient for frequent modifications like appending, inserting, or deleting 
+  characters because it changes the contend in place.
+- 'StringBuilder' is not synchronized, meaning it is not thread-safe. As a result, it is generally 
+  faster than StringBuffer, which is synchronized and thread-safe but tends to be slower due to 
+  the overhead of synchronization.
+  
+  
+Constructors of StringBuilder
+---------------------------
+1> StringBuilder()
+~~~~~~~~~~~~~~~~~
+   - Create  an empty 'StringBuilder' with an initial capacity of 16 characters.
+   - New Capacity = (CC + 1) * 2
+   - Example: 
+   		StringBuilder sb = new StringBuilder();
+   		
+2> StringBuffer(int capacity)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Create an empty 'StringBuffer' with the specified initial capacity.
+	- Example: 
+		StringBuider sb = new StringBuilder(50);
+		
+3> StringBuilder(String str)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Create a 'StringBuilder' initialized to the contents of the specified string.
+	- The capacity = str.length() + 16
+	- Example:
+		StringBuilder sb = new StringBuilder("Hello");
+		
+		
+Methods of StringBuilder
+------------------------
+ ~~~~~~~~~~~~~~~~~SAME AS StringBuffer~~~~~~~~~~~~~~~~~~~
+ 
+ 
+ 
+ 
