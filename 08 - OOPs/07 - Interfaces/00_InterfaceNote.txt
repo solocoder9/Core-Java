@@ -1,0 +1,43 @@
+Interface
+---------
+- An interface in Java is a reference type that defines a contract or a set of abstract methods 
+  that a class must implement. 
+- It serves as a blueprint for classes, specifying a set of methods that the implementing classes 
+  must provide. 
+- Interfaces support abstraction and multiple inheritance, allowing a class to inherit behavior 
+  from multiple sources. Starting from Java 8, interfaces can also include default methods with 
+  implementations and static methods.
+
+Types of Interface
+------------------
+- There are 4 types of inteface in java, these are
+    1> Normal Interface(Regular)
+    2> Fungctional Interface3
+    3> Marker Interface
+    4> SAM Interface(Single Abstract Method)
+
+1> Normal Interface
+~~~~~~~~~~~~~~~~~~~
+- Simple normal defination.
+
+2> Functional Interface
+~~~~~~~~~~~~~~~~~~~~~~~
+- A functional interface in Java is an interface that contains exactly one abstract method.
+- It can have multiple default or static methods, but it must have exactly one abstract method.
+- Functional interfaces are used to enable functional programming in Java, particularly with 
+  lambda expressions and method references.
+- Introduced in Java 8
+
+3> Marker Interface
+~~~~~~~~~~~~~~~~~~~
+- Marker interfaces in Java are interfaces that do not declare any methods.
+- They serve as markers to indicate certain behaviors or properties of classes that implement them.
+- Marker interfaces are typically used to provide metadata about the implementing classes.
+
+4> Single Abstract Method(SAM) Interface
+----------------------------------------
+- Single Abstract Method(SAM) interfaces in Java are interfaces that contain exactly one abstract method.
+- They are also known as functional interfaces and are crucial for enabling functional programming features 
+  like lambda expressions and method references.
+- Example: java.util.function.Function is a SAM interface in Java.
+- It represents a function that accepts one argument and produces a result.
