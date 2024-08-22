@@ -1,0 +1,82 @@
+Q1>
+
+package _01_String._04_PracticeQuestions;
+
+public class Question1 {
+	public static void main(String[] args) {
+		String ta = "A";
+		ta = ta.concat("B");
+		String tb = "C";
+		ta = ta.concat(tb);
+		ta.replace('C', 'D');
+		ta = ta.concat(tb);
+		
+		System.out.println(ta); 
+	}
+}
+
+
+Options -
+a> ABCD
+b> ABC
+c> ACD
+d> ABCC
+
+ans - ABCC
+
+
+Explanation:
+
+1. `String ta = "A";`
+   - `ta` is initialized with the string "A".
+
+2. `ta = ta.concat("B");`
+   - `ta` is updated to "AB" by appending "B".
+
+3. `String tb = "C";`
+   - `tb` is initialized with the string "C".
+
+4. `ta = ta.concat(tb);`
+   - `ta` is updated to "ABC" by appending `tb` ("C").
+
+5. `ta.replace('C', 'D');`
+   - `replace` creates a new string where 'C' is replaced with 'D'. However, since the result is 
+     not assigned to any variable, it does not change `ta`. The original `ta` remains "ABC".
+
+6. `ta = ta.concat(tb);`
+   - `ta` is updated to "ABCC" by appending `tb` ("C") again.
+
+7. `System.out.println(ta);`
+   - Prints "ABCC".
+
+Thus, the final output is "ABCC", and the correct answer is `d) ABCC`.
+
+
+============================================================================================================
+Q2>
+
+public class Question2 {
+	public static void main(String[] args) {
+		String str = " ";
+		str.trim();
+		System.out.println(str.equals(" ") + " " + str.isEmpty());  // true false
+	}
+}
+
+options: 
+a> true false
+b> false false
+c> true true
+d> false true
+
+ans - true false
+
+Explanation:-
+-Explanation:
+
+1. `str` is initially a single space.
+2. `str.trim()` creates a new string with no leading or trailing spaces, but does not assign this 
+     new string back to `str`. Therefore, the original `str` still contains one space and the new 
+     string goes to garbage collection.
+
+============================================================================================================
