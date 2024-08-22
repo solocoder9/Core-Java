@@ -1,0 +1,150 @@
+StringBuffer
+------------
+- 'StringBuffer' is a class in Java that provides a way to handle and manipulate string with
+  mutable content. 
+- Unlike 'String', which is immutable, 'StringBuffer' allows you to modify the content of the
+  string without creating new objects for each changes.
+- 'StringBuffer' is synchronized, which means it is thread-safe and can be used in multi-threaded
+  environments without additional synchronization.
+- 'StringBuffer' is efficient for frequent modifications like appending, inserting, or deleting 
+  characters because it changes the contend in place.
+  
+  
+Constructors of StringBuffer
+---------------------------
+1> StringBuffer()
+~~~~~~~~~~~~~~~~~
+   - Create  an empty 'StringBuffer' with an initial capacity of 16 characters.
+   - New Capacity = (CC + 1) * 2
+   - Example: 
+   		StringBuffer sb = new StringBuffer();
+   		
+2> StringBuffer(int capacity)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Create an empty 'StringBuffer' with the specified initial capacity.
+	- Example: 
+		StringBuffer sb = new StringBuffer(50);
+		
+3> StringBuffer(String str)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Create a 'StringBuffer' initialized to the contents of the specified string.
+	- The capacity = str.length() + 16
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello");
+		
+		
+Common Methods of StringBuffer
+------------------------------
+1> int length()
+~~~~~~~~~~~~~~~
+	- Returns the length(number of characters) of this StringBuffer.
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello");
+		int length = sb.length(); // length is 5
+
+2> boolean isEmpty()
+~~~~~~~~~~~~~~~~~~~~
+	- Returns 'true' if the 'StringBuffer' contains no characters.
+	- Example:
+		StringBuffer sb = new StringBuffer();
+		S.o.p(sb.isEmpty) // true
+		
+3> char charAt(int index)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Returns the character at the specified index.
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello");
+		S.o.p(sb.charAt(1)); // e
+		
+4> char set(int index, char ch)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Replaces the character at the specified index with the specified character.
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello");
+		sb.setCharAt(1, 'a'); // sb now contains "Hallo"
+		
+5> boolean append(String str)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Appends the specified string to this 'StringBuffer'.
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello");
+		sb.append(" World"); // sb now contains "Hello World"
+		
+6> void insert(int offset, String str)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Inserts the specified string into this 'StringBufffer' at the specified offset.
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello World");
+		sb.insert(6, "Amazing "); // sb now contains "Hello Amazing World"
+		
+7> StringBuffer delete(int start, int end)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Removes the characters in a substring of this 'StringBuffer'.
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello Amazing World");
+		sb.delete(6, 14); // sb now contains "Hello World"
+		
+8> StringBuffer deleteCharAt(int index)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Removes the character at the specified index.
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello");
+		sb.deleteCharAt(1); // sb now contains "Hllo"
+		
+9> setLenght(0)
+~~~~~~~~~~~~~~~
+	- Clear the 'StringBuffer'.
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello");
+		sb.setLength(0); // sb is now empty
+		
+10> int indexOf(String str)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Returns the index of the first occurrence of the specified substring, or -1 if it is not found.
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello World");
+		int index = sb.indexOf("World"); // index is 6
+		
+11> int lastIndexOf(String str)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Returns the index of the last occurrence of the specified substring, or -1 if it is not found.
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello World World");
+		int lastIndex = sb.lastIndexOf("World"); // lastIndex is 12
+		
+12> StringBuffer subSequence(int start, int end)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Returns a new 'StringBuffer' containing the subsequence from 'start' (inclusive) to 'end'(exclusive).
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello World");
+		CharSequence subseq = sb.subSequence(6, 11); // subseq is "World"
+	
+13> boolean append(boolean b)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Appends the string representation of the boolean to this 'StringBuffer'.
+	- Example:
+		StringBuffer sb = new StringBuffer("Value: ");
+		sb.append(true); // sb now contains "Value: true"
+		
+14> boolean append(int i)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Appends the string representation of the integer to this 'StringBuffer'.
+	- Example:
+		StringBuffer sb = new StringBuffer("Number: ");
+		sb.append(123); // sb now contains "Number: 123"
+		
+15> StringBuffer reverse()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Reverse the sequence of characters in this 'StringBuffer'.
+	- Example:
+		StringBuffer sb = new StringBuffer("Hello");
+		sb.reverser() // olleH
+	
+16> ensureCapacity(int minimumCapacity)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- Ensures that the StringBuffer can accommodate at least the specified capacity. 
+	- It can increase the capacity if needed.
+	
+17> trimToSize()
+~~~~~~~~~~~~~~~~
+	- Trims the StringBuffer's capacity to exactly match its current length, potentially freeing unused memory.
