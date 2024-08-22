@@ -1,0 +1,11 @@
+Difference between StringBuffer and StringBuilder
+-------------------------------------------------
+
+|      **Aspect**       |                 **StringBuffer**                  |                     **StringBuilder**                               |
+|-----------------------|---------------------------------------------------|---------------------------------------------------------------------|
+| **Synchronization**   | Synchronized; thread-safe                         | Not synchronized; not thread-safe                                   |
+| **Performance**       | Generally slower due to synchronization overhead  | Generally faster due to lack of synchronization                     |
+| **Thread Safety**     | Suitable for use in multi-threaded environments   | Best used in single-threaded environments                           |
+| **API Compatibility** | Same API as `StringBuilder`                       | Same API as `StringBuffer`                                          |
+| **Usage**             | Use when thread safety is needed                  | Use when performance is a concern and thread safety is not required |
+---------------------------------------------------------------------------------------------------------------------------------------------------
