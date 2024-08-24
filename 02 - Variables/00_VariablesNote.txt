@@ -1,0 +1,80 @@
+Variables
+---------
+- A Variable is a data container that holds the data, and its values can be changed during the 
+program’s execution.
+- Every variable is associated with a data type, which specifies the type and size of values it 
+can store.
+- A variable is a name of memory location. It is the basic unit of storage in a program.
+- Variable in Java -
+    ● The value stored in a variable can be changed during program execution.
+    ● A variable is only a name given to a memory location. All the operations done on the 
+      variable affect that memory location.
+    ● In java, all variable must be declared before use.
+
+Declaring a Variable
+--------------------
+- In Java, all variable must be declared before they can be used.
+- There are two ways to declare a variable in java.
+    1. Declare with initial value
+    2. Declare without initial value
+
+Types of Variables
+------------------
+- There are 3 types of variables in java, these are:-
+    1. Local variable
+    2. Instance variable
+    3. Static variable
+
+
+1> Local Variable
+~~~~~~~~~~~~~~~~~
+- A local variable in Java is a variable that is declared within a method, constructor, or block of code.
+- They must be initialized before use and do not have default values.
+- They are allocated on the stack.
+- Local variable cannot have access modifiers.
+
+Scope: 
+  - Local variables are accessible only within the method, constructor, or block in which there are declared.
+  
+Lifetime: 
+  - Local variables are created when the method or block is entered and destroyed when the method or block 
+    is exited. 
+  - Their lifetime is limited to the execution time of the method or block.
+
+
+2> Instance Variables
+~~~~~~~~~~~~~~~~~~~~~
+- An instance variable is Java is a variable that is declared within a class but outside any method, constructor,
+  or blocks.
+- Each instance of the class (i.e., each object created from the class) has its own copy of instance variables.
+- They are used to store data that is specific to each instance of a class.
+- Instance variables are initialized to default values if not explicitly initialized.
+- They can have access modifiers(private, protected, public) that control their visibility.
+
+Scope:
+	- Instance variables are accessible by all methods, constructors, and blocks within the class where they are
+	  declared.
+	- They can also be accessed by other classes if they are given appropriate access modifiers.
+Lifetime:
+	- Instance variable exist as long as the object they belong to exists.
+	- They are created when the object is instantiated and destroyed when the object is garbage collected.
+
+
+3> Static variables
+~~~~~~~~~~~~~~~~~~~
+- A static variable in Java is a variable that is declared with the'static' keyword within a class.
+- Unlike instance variables, which are associated with individual objects, static variable are associated 
+  with the class itself. This means that there is only one copy of static variable, shared among all
+  instances of the class.
+- Static variables are initialized when the class is first loaded and exist for the lifetime of the class.
+- They can be accessed using the class name and can have access modifiers to control visibility.
+- Memory allocation for static variables occurs in the method area of the heap, shared across instances.
+
+Scope:
+	- Static variable are accessible within the class in which they are declared and can be accessed by all 
+	  all methods and blocks in the class. 
+	- They can also be accessed using the class name from outside the class.
+	
+Lifetime:
+	- Static variables are created when the class is first loaded and destroyed when the class is unloaded.
+	- They persist for the lifetime of the class, not just for a single instance.
