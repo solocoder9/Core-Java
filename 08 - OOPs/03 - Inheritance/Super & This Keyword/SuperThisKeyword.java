@@ -8,8 +8,8 @@ class Child extends Parent {
     int b = 200;
 
     void disp(int a, int b) {
-        System.out.println(a + b); // local variables
-        System.out.println(this.a + this.b); // current class variabls
+        System.out.println(a + b); // current class local variables
+        System.out.println(this.a + this.b); // current class instance variabls
         System.out.println(super.a + super.b); // super class variables
     }
 }
