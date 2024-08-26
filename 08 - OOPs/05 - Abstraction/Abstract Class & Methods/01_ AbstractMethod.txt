@@ -1,0 +1,13 @@
+Abstract method
+---------------
+- An abstract method is a method that is declared without an implementation (no method 
+  body) is an abstract class.
+- Subclass must provide concrete implementations of all abstract methods to become 
+  concreate class that can be instantiated.
+- Abstract methods are defined using the 'abstract' keyword.
+
+Concreate Class
+---------------
+- A concrete class is a class that extends an abstracct class and provides implementation
+  for all of its abstract methods.
+- Concrete classes can be instantiated, unlike abstract classes.
