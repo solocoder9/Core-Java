@@ -1,0 +1,16 @@
+Abstract Class
+--------------
+- An abstract class is a class that cannot be instantiated directly. It serves as a 
+  blue print for other classes.
+- It can contain abstract method (method without a body) and concreate methods (methods
+  with body).
+- Abstract classes are used to define commond attributes and methods that mutiple derived
+  classes can share.
+
+Rules
+~~~~~
+- An abstract class can have both abstract and non-abstract methods.
+- An abstract can have member variables, blocks, constructors, and methods.
+- An abstract class cannot be instantiated directly. You must create subclass that implements
+  its abstract methods.
+- It a class contains one or more abstract methods, it must be declared abstract.
