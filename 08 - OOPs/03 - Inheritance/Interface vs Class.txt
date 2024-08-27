@@ -1,0 +1,23 @@
+Interface vs Class (Inheritance)
+--------------------------------
+● class extends class
+● interface extends interface
+● class implements interface
+
+
+class A extends B   ---------------------------------> Valid
+class A extends B, c --------------------------------> Invalid
+class A implements It1 ------------------------------> Valid
+class A implements It1, It2 -------------------------> Valid
+class A extends A -----------------------------------> Invalid
+
+
+interface It1 extends It2 ---------------------------> Valid
+interface It1 entends It2, It3 ----------------------> Valid
+interface It1 extends A -----------------------------> Invalid
+interface It1 extends It1 ---------------------------> Invalid
+
+
+(extends keyword must be first keyword)
+class A extends B implements It1, It2 ---------------> Valid
+class A implements It1, It2 extends B ---------------> Invalid
