@@ -1,0 +1,75 @@
+Object Type Casting
+-------------------
+- Object type casting in Java refers to the process of converting an object of type(Class) to another
+  type, typically within the class hierarchy.
+- It is a fundamental concept for working with inheritance hierarchies and polymorphism in object-oriented
+  programming(OOP).
+- There are two types of object type casting in Java:
+		1> Upcasting
+		2> Downcasting	
+
+1> Upcasting 
+~~~~~~~~~~~~~
+- Casting an object of a subclass type to a superclass type is known as upcasting, and it is done implicitly.
+- It is always allowed because a subclass object is also an instance of its superclass.
+- Casting a subclass object to its superclass type is always safe and allowed because every subclass object 
+  is inherently a superclass object. This is why upcasting is implicit and doesn't require explicit casting.
+  
+2> Downcasting 
+--------------
+- Casting an object of a superclass type to a subclass type is known as downcasting, and it must be done 
+  explicitly.
+- This requires explicit casting because the superclass type could refer to instances of multiple subclasses,
+  so the compiler needs to be told explicitly which specific subclass type you are casting to.
+- It can throw a 'ClassCastException' at runtime if the object being cast is not actually an instance of the
+  subclass.
+  
+  
+  
+Rules of Object type casting
+----------------------------
+			
+									|---------------------------|
+									|		A b = (C) d;		|
+									|---------------------------|
+									
+1> Type Compatibility
+~~~~~~~~~~~~~~~~~~~~~
+- Type 'c' and 'd' must have a relationship in the class hierarchy; specifically, 'd' must be of a type that is
+  either 'c' or a subclass of 'c'. Otherwise, a compile-time error will occur.
+- Example:
+		class A { }
+		class B extends A { }
+		class C extends B { }
+
+		A a = new C(); // Upcasting, safe
+		B b = (B) a;   // Downcasting, needs explicit cast, safe
+		
+		
+2> Cast Type Must Match
+~~~~~~~~~~~~~~~~~~~~~~~
+- The type 'c' in the cast must be compatible with the runtime type of 'd'. Specifically, 'd' should be an instance
+  of 'c' or its subclass, otherwise, a compile-time error will occur.
+- Example:
+		class A { }
+		class B extends A { }
+		class C extends B { }
+
+		A a = new B(); // `a` is not an instance of `C`
+		C c = (C) a;   // Compile-time error
+		
+3> Runtime Type Check
+~~~~~~~~~~~~~~~~~~~~~
+- The runtime type of 'd' must be either 'c' or a subclass of 'c'. If it is not, a 'ClassCastException' will be 
+  thrown at runtime.
+- Example:
+		class A { }
+		class B extends A { }
+		class C extends B { }
+
+		A a = new C(); // `a` is actually a `C`
+		B b = (B) a;   // Downcasting, safe and valid
+
+		A a2 = new B(); // `a2` is not a `C`
+		C c = (C) a2;   // Runtime exception: ClassCastException
+		
