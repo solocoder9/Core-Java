@@ -1,0 +1,10 @@
+Adapter Class in Java
+---------------------
+- An adapter class is a design pattern that provides a default or partial implementation of an interface
+  or abstract class, allowing other classes to override only the method they are interested in.
+- This pattern is particularly useful when working with interfaces or abstract class that have multiple
+  methods, but you only need to implement a subset of those methods.
+  
+- In simple words, an adapter class is a class that provides default (often empty) implementations for 
+  the methods of an interface or abstract class, allowing subclasses to override only the methods they 
+  are interested in.
