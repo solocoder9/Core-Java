@@ -1,0 +1,7 @@
+Exception Handling Keywords Summery
+-----------------------------------
+1> try - To maintain risky code
+2> catch - To maintain handling code
+3> finally - To maintain clean-up code
+4> throw - To hand-over out created exception object to the JVM manually
+5> throws - To delegate the responsibility of exception handling to the caller
