@@ -1,0 +1,8 @@
+Unboxing in Java
+----------------
+- The conversion of wrapper class object to their corresponding primitive type automatically
+  (implicitly) by the compiler is knows as Unboxing.
+- Unboxing was introduced in Java 1.5 version.
+- Example:
+	Integer I = 9;
+	int i = I;
