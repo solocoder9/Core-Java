@@ -3,6 +3,7 @@ import java.io.PrintWriter;
 
 public class Test2 {
     public static void main(String[] args) {
+        // try with mutilple resources
         try (FileReader fr = new FileReader("input.txt");
              PrintWriter pw = new PrintWriter("output.txt")) {
             
