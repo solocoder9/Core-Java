@@ -1,0 +1,8 @@
+Autoboxing in Java
+-----------------
+- The conversion of primitive types to their corresponding wrapper class objects automatically
+  (implicitly) by the compiler is knows as autoboxing.
+- Autoboxing was introduced in Java 1.5 version.
+- Example:
+	int i = 9;
+	Integer I = i;
