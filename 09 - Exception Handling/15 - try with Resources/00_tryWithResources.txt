@@ -5,7 +5,7 @@ try with resources
 - The try-with-resources statement ensures that each resoure is closed at the end of the statement.
   This is done automatically, regardless of whether the 'try' block  completes normally or due to
   an exception.
-- It was introduced in Java 7(aka Java 1.7 verson).
+- It was introduced in Java 1.7 version(aka Java 7 verson).
 - It reduces boilerplate code and improves the reliability of code by ensuring resources and always
   closed properly. This minimizes the risk of resource leaks and makes code cleaner and easier to 
   maintain.
