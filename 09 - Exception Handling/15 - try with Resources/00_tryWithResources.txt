@@ -1,0 +1,14 @@
+try with resources
+------------------
+- In Java, the try-with-resources statement is a try statement that declares one or more 
+  resources. A resource is an object that must be closed after the program is finished with it. 
+- The try-with-resources statement ensures that each resoure is closed at the end of the statement.
+  This is done automatically, regardless of whether the 'try' block  completes normally or due to
+  an exception.
+- It was introduced in Java 7(aka Java 1.7 verson).
+- It reduces boilerplate code and improves the reliability of code by ensuring resources and always
+  closed properly. This minimizes the risk of resource leaks and makes code cleaner and easier to 
+  maintain.
+- It leverages the 'AutoCloseable' inteface and handles exceptions related to reasoure management 
+  gracefully. Resources used in the 'try-with-resources' statement must implement 'AutoCloseable',
+  which provide the 'close()' method.
