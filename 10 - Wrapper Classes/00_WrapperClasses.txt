@@ -1,0 +1,82 @@
+Wrapper Classes in Java
+-----------------------
+- Wrapper classes in Java are classes that provide a way to use primitive date types as object.
+- In other words, Wrapper classes in java are use to covert primitive types to objects.
+- Each primitive type has a corresponding wrapper class in the 'java.lang' package that allow 
+  primitive types to be treated as objects.
+- Like 'String', Wrapper classes are immutable. This means that once a wrapper object is created,
+  its value cannot be changed.
+  	
+  		1> byte --------------> Byte
+  		2> short -------------> Short
+  		3> int ---------------> Integer
+  		4> long --------------> Long
+  		5> float -------------> Float
+  		6> double ------------> Double
+  		7> char --------------> Character
+  		8> boolean -----------> Boolean
+
+
+Constructors Of Wrapper Classes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		+----------------+---------------------------------------------+
+		| Wrapper Class  | Constructors                                |
+		+----------------+---------------------------------------------+
+		| Byte           | Byte(byte value)                            |
+		|                | Byte(String s)                              |
+		+----------------+---------------------------------------------+
+		| Short          | Short(short value)                          |
+		|                | Short(String s)                             |
+		+----------------+---------------------------------------------+
+		| Integer        | Integer(int value)                          |
+		|                | Integer(String s)                           |
+		+----------------+---------------------------------------------+
+		| Long           | Long(long value)                            |
+		|                | Long(String s)                              |
+		+----------------+---------------------------------------------+
+		| Float          | Float(float value)                          |
+		|                | Float(String s)                             |
+		+----------------+---------------------------------------------+
+		| Double         | Double(double value)                        |
+		|                | Double(String s)                            |
+		+----------------+---------------------------------------------+
+		| Character      | Character(char value)                       |
+		+----------------+---------------------------------------------+
+		| Boolean        | Boolean(boolean value)                      |
+		|                | Boolean(String s)                           |
+		+----------------+---------------------------------------------+
+		
+		
+Common Utility Methods
+~~~~~~~~~~~~~~~~~~~~~~
+		1> valueOf():
+		~~~~~~~~~~~~~
+			- Converts primitive types or strings to wrapper object.
+			- Example:
+				Integer.valueOf(10) or Integer.valueOf("10")
+			
+		2> parseXXX():
+		~~~~~~~~~~~~~~
+			- Parse a string and returns the corresponding primitive type.
+			- Example:
+				Integer.parseInt("10")
+				
+		3> toString():
+		~~~~~~~~~~~~~~
+			- Returns the string representation of the wrapper object.
+			- Example:
+				Integer.toString(10)
+				
+		4> valueOf(String s):
+		~~~~~~~~~~~~~~~~~~~~~
+			- Converts a string to a wrapper object.
+			- Example:
+				Double.valueOf("3.14")
+				
+		5> XXXValue():
+		~~~~~~~~~~~~~~
+			- Retrieves the primitive value from the wrapper object.
+			- Example: 
+				Integer. intValue()
+				
+			
