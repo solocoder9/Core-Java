@@ -78,5 +78,22 @@ Common Utility Methods
 			- Retrieves the primitive value from the wrapper object.
 			- Example: 
 				Integer. intValue()
+
+		6> equeals(Object o):
+		~~~~~~~~~~~~~~~~~~~~~
+			- Checks if the current object is equal to the specified object.
+			- Example:
+				Integer.valueOf(10).equals(Integer.valueOf(10))
+
+		7> hashCode():
+		~~~~~~~~~~~~~~
+			- Returns the has comde of the current object.
+			- Integer.valueOf(10).hashCode()
+
+		8> compareTo(T o):
+		~~~~~~~~~~~~~~~~~
+			- Compares the current object with another object of the same type.
+			- Example: 
+				Integer.valueOf(10).compareTo(Integer.valueOf(20))
 				
 			
