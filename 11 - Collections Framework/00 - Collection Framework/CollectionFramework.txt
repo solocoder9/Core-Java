@@ -12,6 +12,7 @@ Collection Framework
   provided by java to manipulate and store group of objects efficiently.
 - It offers a standard way to work with collections, macking it easier
   for defelopers to write code that is more robust, reusable, and maintainable.
+- Collection framework was introduced in Java 1.2 version(aka Java 2).
 
 
 Important Interfaces of Collection Framework
