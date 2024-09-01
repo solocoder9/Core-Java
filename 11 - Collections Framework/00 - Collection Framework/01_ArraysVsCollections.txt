@@ -1,0 +1,37 @@
+Difference Between Arrays and Collections
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+|------------------------------------------------------------------------------------------------------------------|
+| Aspect             |                    Arrays                   |                  Collections                  |
+|--------------------|---------------------------------------------|-----------------------------------------------|
+| Definition         | Fixed-size data structure to hold elements  | Framework of interfaces and classes to        |
+|                    | of the same type.                           | handle groups of objects.                     |
+|--------------------|---------------------------------------------|-----------------------------------------------|
+| Size               | Fixed at creation. Cannot change size       | Dynamic size. Can grow or shrink as           |
+|                    | dynamically.                                | needed.                                       |
+|--------------------|---------------------------------------------|-----------------------------------------------|
+| Type               | Can hold primitive types (e.g., `int`,      | Can only hold objects (no primitive           |
+|                    | `char`) and objects.                        | types).                                       |
+|--------------------|---------------------------------------------|-----------------------------------------------|
+| Access             | Direct access via indices (e.g., `array[0]`)| Access via iterators or methods provided      |
+|                    |                                             | by the collection (e.g., `.get(0)` for        |
+|                    |                                             | `List`).                                      |
+|--------------------|---------------------------------------------|-----------------------------------------------|
+| Performance        | Generally faster for basic operations due   | Slight overhead due to abstraction and        |
+|                    | to direct indexing.                         | additional functionalities.                   |
+|--------------------|---------------------------------------------|-----------------------------------------------|
+| Flexibility        | Limited to a single type of elements and    | Highly flexible, supports different types     |
+|                    | size.                                       | of collections (e.g., `List`, `Set`, `Map`).  |
+|--------------------|---------------------------------------------|-----------------------------------------------|
+| Utility Methods    | Limited methods (e.g., `length`, `clone`)   | Rich set of utility methods (e.g., `add()`,   |
+|                    |                                             | `remove()`, `contains()`).                    |
+|--------------------|---------------------------------------------|-----------------------------------------------|
+| Initialization     | Initialized with size or pre-defined values.| Initialized via constructors or factory       |
+|                    |                                             | methods (e.g., `ArrayList`, `HashSet`).       |
+|--------------------|---------------------------------------------|-----------------------------------------------|
+| Type Safety        | Type-safe with generics (e.g., `int[]`,     | Type-safe with generics (e.g., `List<String>`,|
+|                    | `String[]`).                                | `Set<Integer>`).                              |
+|--------------------|---------------------------------------------|-----------------------------------------------|
+| Multi-Dimensional  | Supports multi-dimensional arrays (e.g.,    | Multi-dimensional collections are not         |
+|                    | `int[][]`).                                 | natively supported.                           |
+|------------------------------------------------------------------------------------------------------------------|
