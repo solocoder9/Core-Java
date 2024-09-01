@@ -89,7 +89,7 @@ Common Utility Methods
 
 	7> hashCode():
 	~~~~~~~~~~~~~~
-		- Returns the has comde of the current object.
+		- Returns the has code of the current object.
 		- Integer.valueOf(10).hashCode()
 
 	8> compareTo(T o):
