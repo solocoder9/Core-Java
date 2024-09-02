@@ -1,0 +1,52 @@
+Characteristics of Collection Classes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+|--------------------------------------------------------------------------------------------------------------------------------------|
+| **Characteristic**               |                                         **Options**                                               |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| **1. Version**                   | - Java 1.0 (Legacy classes like `Vector`, `Stack`)                                                |
+|                                  | - Java 1.2 (Introduction of Collection Framework)                                                 |
+|                                  | - Java 5 (Generics)                                                                               |
+|                                  | - Java 6 (Performance improvements)                                                               |
+|                                  | - Java 7 (Minor updates)                                                                          |
+|                                  | - Java 8 (Streams API, default methods)                                                           |
+|                                  | - Java 9 (Immutable collections, module system)                                                   |
+|                                  | - Java 10 and later (Local-variable type inference, other enhancements)                           |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| **2. Heterogeneous**             | - Yes (e.g., `ArrayList`, `HashSet`)                                                              |
+|                                  | - No (e.g., `TreeSet`, `TreeMap`)                                                                 |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| **3. Null Values**               | - Allows Null Values (e.g., `ArrayList`, `HashMap` values)                                        |
+|                                  | - Disallows Null Values (e.g., `TreeSet`, `TreeMap` keys, `PriorityQueue`)                        |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| **4. Duplicate Elements**        | - Allows Duplicates (e.g., `ArrayList`, `LinkedList`, `PriorityQueue`)                            |
+|                                  | - Disallows Duplicates (e.g., `HashSet`, `LinkedHashSet`, `TreeSet`)                              |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| **5. Ordered**                   | - Insertion Order (e.g., `LinkedList`, `LinkedHashSet`, `LinkedHashMap`)                          |
+|                                  | - Sorted Order (e.g., `TreeSet`, `TreeMap`)                                                       |
+|                                  | - Priority Order (e.g., `PriorityQueue`)                                                          |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| **6. Access**                    | - By Index (e.g., `ArrayList`, `LinkedList`)                                                      |
+|                                  | - By Key (e.g., `HashMap`, `LinkedHashMap`, `TreeMap`)                                            |
+|                                  | - Via Iterator (e.g., `HashSet`, `TreeSet`, `PriorityQueue`)                                      |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| **7. Synchronized**              | - Synchronized (e.g., `Vector`, `Collections.synchronizedList()`)                                 |
+|                                  | - Non-Synchronized (e.g., `ArrayList`, `HashSet`, `HashMap`)                                      |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| **8. Performance**               | - Fast Access (e.g., `ArrayList`)                                                                 |
+|                                  | - Fast Insertions/Deletions (e.g., `LinkedList`)                                                  |
+|                                  | - Fast Operations (e.g., `HashSet`, `HashMap`)                                                    |
+|                                  | - Ordered Operations (e.g., `TreeSet`, `TreeMap` - operations such as searching, insertion, and   |
+|                                  |   deletion are typically logarithmic in time complexity due to the underlying data structure)     |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| **9. Underlying Data Structure** | - Dynamic Array (e.g., `ArrayList`, `ArrayDeque`)                                                 |
+|                                  | - Doubly-Linked List (e.g., `LinkedList`)                                                         |
+|                                  | - Hash Table (e.g., `HashSet`, `HashMap`)                                                         |
+|                                  | - Hash Table + Linked List (e.g., `LinkedHashSet`, `LinkedHashMap`)                               |
+|                                  | - Red-Black Tree (e.g., `TreeSet`, `TreeMap`)                                                     |
+|                                  | - Binary Heap (e.g., `PriorityQueue`)                                                             |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+|*10. Initial Capacity and Growth**| - Initial Capacity (e.g., `ArrayList`, `HashMap`)                                                 |
+|                                  | - Growth Strategy (e.g., `ArrayList` typically doubles in size, `HashMap` resizes based on        |
+|                                  |   load factor)                                                                                    |
+|--------------------------------------------------------------------------------------------------------------------------------------|
