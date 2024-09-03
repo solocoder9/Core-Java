@@ -1,0 +1,112 @@
+Generics in Java
+----------------
+- Generics in Java is a feature introduced in Java 1.5 (also known as Java 5) that enables writing 
+  more flexible and reusable code while ensuring type safety.
+- It helps avoid typecasting issues by specifying the type of objects that a class, interface, or 
+  method can handle. This means the compiler checks for type errors during compilation, so there is 
+  no need to manually convert types or worry about runtime errors due to incorrect types.
+  
+  
+Basic Syntax:
+~~~~~~~~~~~~~
+- Generics use type parameters, which are placeholders for the actual types used in a class, interface,
+  or method.
+- The type parameters are enclosed in angle brackets('<>').
+- Example:
+	public class Box<T> {
+    	private T value;
+
+    	public void setValue(T value) {
+        	this.value = value;
+    	}	
+
+    	public T getValue() {
+        	return value;
+    	}
+	}
+	
+	● Here, T is a type parameter that can be replaced with any specific type like Integer, 
+	  String, etc.
+	
+Type Parameter
+~~~~~~~~~~~~~~
+- Common conventions for type parameter names include:
+		● T - Type
+		● E - Element
+		● K - Key
+		● V - Value
+		
+- Example:
+	public interface Map<K, V> {
+    	V get(K key);
+    	void put(K key, V value);
+	}
+	
+	
+Generic Classes
+~~~~~~~~~~~~~~~
+- A generic class can work with any type specified at the time of instantiation.
+- Example: 
+	Box<String> stringBox = new Box<>();
+	stringBox.setValue("Hello");
+	String value = stringBox.getValue();
+	
+	
+Generic Interfaces
+~~~~~~~~~~~~~~~~~~
+- Interfaces can also be generic and define methods that use type parameters.
+- Example:
+	public interface Comparable<T> {
+    	int compareTo(T other);
+	}
+	
+	
+Generic Methods
+~~~~~~~~~~~~~~~
+- Methods can be made generic, allowing them to work with various types.
+- Example:
+	public <T> void printArray(T[] array) {
+    	for (T element : array) {
+        	System.out.println(element);
+    	}
+	}
+	
+Wildcards
+~~~~~~~~~
+- Wildcards('?') are used to represent an unknown type and provide flexibility in generics.	
+- Generics can be restricted to a certain range of types using bounds.
+- This ensures that the type parameter meets specific requirements.
+- Based on Bounds there are 3 type of wildcards
+	1> Unbounded Wildcards
+	2> Upper Bounded Wildcards
+	3> Lower Bounded Wildcards
+	
+	1> Unbounded Wildcards('<?>')
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- It represent an unknown type.
+	- Example:
+		public void printList(List<?> list) {
+    		for (Object obj : list) {
+        		System.out.println(obj);
+    		}
+		}
+		
+		
+	2> Upper Bounded Wildcards('<? extends T>')
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- It restrict the type to a specific type or its subclasses.
+	- Example:
+		public void processList(List<? extends Number> list) {
+    		// list can be of type List<Integer>, List<Double>, etc.
+		}
+		
+	3> Lower Bounded Wildcards('<? super T>')
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	- It Restrict the type to a specific type or its superclasses.
+	- Example:
+		public void addToList(List<? super Integer> list) {
+    		list.add(10); // Works because Integer is a subclass of Number
+		}
+		
+		
+		
