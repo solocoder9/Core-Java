@@ -1,0 +1,17 @@
+Multithreading in Java
+----------------------
+- Multithreading allows concurrent execution of two or ore threads, enabling efficient 
+  CPU utilization and better application performance.
+
+Key Concept
+~~~~~~~~~~~
+    ● Thread
+        - A thread is a lightweight process, a separate path of execution in a program.
+
+    ● Main thread
+        - The thread that run the main() method is called the main thread.
+
+    ●  Creating Thread
+        - There are two primary ways to create thread in Java
+            ○ By extending the 'Thread' class
+            ○ By implementing the 'Runnable' interface
