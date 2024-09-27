@@ -1,0 +1,12 @@
+Singleton Pattern
+-----------------
+- The Singleton pattern ensures that a class has one instance and provides a global point of
+  access to it.
+- Theis is particularly useful when exactly one object is needed to cordinate actions across
+  the system.
+
+Key Characteristics
+~~~~~~~~~~~~~~~~~~~
+● Private constructor to prevent instantiation(creation & initialization).
+● A static method to provide access to the instance.
+● Lazy or eager initialization.
