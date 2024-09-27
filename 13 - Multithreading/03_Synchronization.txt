@@ -1,0 +1,18 @@
+Synchronization
+---------------
+- To prevent thread interference and ensure thread safety, synchronization is used. 
+- There are two primary ways:
+
+1. Synchronized Methods:
+~~~~~~~~~~~~~~~~~~~~~~~~
+    public synchronized void synchronizedMethod() {
+        // Code that needs to be synchronized
+    }
+
+2. Synchronized Blocks:
+~~~~~~~~~~~~~~~~~~~~~~~
+    public void synchronizedBlock() {
+        synchronized (this) {
+            // Code that needs to be synchronized
+        }
+    }
