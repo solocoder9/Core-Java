@@ -1,0 +1,8 @@
+Thread States
+-------------
+● New: Thread is created but not started.
+● Runnable: Thread is ready to run and waiting for CPU time.
+● Blocked: Thread is blocked waiting for a monitor lock.
+● Waiting: Thread is waiting indefinitely for another thread to perform a particular action.
+● Timed Waiting: Thread is waiting for another thread to perform an action for a specified waiting time.
+● Terminated: Thread has exited after execution.
