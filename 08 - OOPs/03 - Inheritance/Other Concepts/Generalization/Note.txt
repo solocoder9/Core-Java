@@ -7,7 +7,7 @@ Generalization
 - Generalization allows to factor out shared attributes and behaviors from 
   multiple classes into a single, more abstract class.
 - It promoting code reusability and maintainability.
-- we can achieve generalization by using extends keword(Inheritance).
+- we can achieve generalization by using extends keyword(Inheritance).
 
   Example:-
   Consider a superclass Vehicle that represents common attributes and behaviors of 
