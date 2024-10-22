@@ -6,7 +6,7 @@ Interface vs Class (Inheritance)
 
 
 class A extends B   ---------------------------------> Valid
-class A extends B, c --------------------------------> Invalid
+class A extends B, C --------------------------------> Invalid
 class A implements It1 ------------------------------> Valid
 class A implements It1, It2 -------------------------> Valid
 class A extends A -----------------------------------> Invalid
