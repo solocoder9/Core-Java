@@ -19,7 +19,7 @@ class Daughter extends Father {
     }
 }
 
-public class HairarchicalInheritance {
+public class HierarchicalInheritance {
     public static void main(String[] args) {
 
         // Creating Son class object
