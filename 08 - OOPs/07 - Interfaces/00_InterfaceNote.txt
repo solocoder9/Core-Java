@@ -18,7 +18,7 @@ Types of Interface
 
 1> Normal Interface
 ~~~~~~~~~~~~~~~~~~~
-- Simple normal defination.
+- Simple normal definition.
 
 2> Functional Interface
 ~~~~~~~~~~~~~~~~~~~~~~~
