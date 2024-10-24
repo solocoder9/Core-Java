@@ -37,7 +37,7 @@ Case 3
 ------
 - If an exception is raised at statement-2 and the corresponding
   catch block is not matched.
-Exicution:
+Execution:
     statement-1
     (Abnormal termination)
 
