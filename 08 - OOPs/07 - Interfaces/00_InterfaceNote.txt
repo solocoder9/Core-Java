@@ -12,7 +12,7 @@ Types of Interface
 ------------------
 - There are 4 types of interface in java, these are
     1> Normal Interface(Regular)
-    2> Fungctional Interface3
+    2> Functional Interface
     3> Marker Interface
     4> SAM Interface(Single Abstract Method)
 
