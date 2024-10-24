@@ -3,7 +3,7 @@ What is OOPs in java?
 - Object-oriented programming (OOP) is a fundamental programming paradigm based on the concept 
   of objects, which can contain data and code: data as fields (properties or attributes) and 
   code as methods (functionality or behavior).
-- It makes code more organized, reusable, and earier to maintain by modeling real-world entities.
+- It makes code more organized, reusable, and easier to maintain by modeling real-world entities.
 - There are 6 core concepts in Object-Oriented Programming(OOP):
 		1> Class
 		2> Object
