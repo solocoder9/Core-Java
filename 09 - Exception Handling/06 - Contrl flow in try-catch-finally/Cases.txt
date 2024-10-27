@@ -57,5 +57,5 @@ Execution:
 Case 5
 ------
 - If an exception raised at statement-5 or statement-6
-Exicution:
+Execution:
     (Abnormal termination)
