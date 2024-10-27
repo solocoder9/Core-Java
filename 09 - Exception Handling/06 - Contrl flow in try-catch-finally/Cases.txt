@@ -15,7 +15,7 @@ Code
 Case 1
 ------
 - If there is no exception.
-Exicution:
+Execution:
     statement-1
     statement-2
     statement-3
