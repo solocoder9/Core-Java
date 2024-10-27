@@ -28,7 +28,7 @@ Case 2
 ------
 - If an exception is raised at statement-2 and the corresponding
   catch block is matched.
-Exicution:
+Execution:
     statement-1
     statement-4
     statement-5
