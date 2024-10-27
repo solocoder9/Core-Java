@@ -49,7 +49,7 @@ Execution:
 Case 4
 ------
 - If exception raised at statement-4
-Exicution:
+Execution:
     (Abnormal termination)
     but before termination, the finally block will execute.
 
