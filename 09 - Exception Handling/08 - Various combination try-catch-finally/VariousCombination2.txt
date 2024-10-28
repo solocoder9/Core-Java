@@ -43,7 +43,7 @@ finally {
 
 }
 
-(Invlaid)
+(Invalid)
 CE: finally without try
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
