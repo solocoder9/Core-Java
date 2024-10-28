@@ -34,7 +34,7 @@ try {
 }
 
 (Invalid)
-Exception x has already been cought
+Exception x has already been caught
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 4)
