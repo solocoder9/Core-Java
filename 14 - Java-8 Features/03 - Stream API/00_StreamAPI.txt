@@ -1,0 +1,48 @@
+
+Stream API
+----------
+- The Stream API in Java, introduced in Java 8, is a powerful tool for working with collections of 
+  data in a functional programming style.
+- It allows you to process sequences of elements (such as collections, arrays, or input/output 
+  resources) in a declarative and functional way, focusing on what you want.
+- It allows you to perform operations such as filtering, mapping, reducing, and sorting on data 
+  without explicitly using loops. 
+- Streams enable a more concise and readable code while also supporting parallel processing for 
+  better performance on large datasets.
+
+Core Concepts of Stream API
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+● Stream:
+    - A stream represents a sequence of elements that can be processed in parallel or sequentially.
+
+● Pipeline:
+    - A series of computations that transform data from one form to another using streams.
+
+● Intermediate Operations:
+    - These operations transform a stream into another stream (e.g., filtering, mapping).
+    - They are lazy, meaning they are not executed until a terminal operation is invoked.\
+
+● Terminal Operation:
+    - These operations produce a result or a side-effect (e.g., collection(), sum(), forEach(), 
+      reduce()), and trigger the execution of the stream pipeline.
+
+
+Key Benefits of Using Stream API
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Declarative style:
+    - Focus on "what" you want to achieve, not "how".
+
+Chaining operation:
+    - Multiple stream operations can be chained to express complex transformations.
+
+Parallel processing:
+    - Built-in support for parallel streams to improve performance on multi-core systems.
+
+Cleaner code:
+    - Reduces boilerplate code such as manual looping and conditional checks.
+
+Functional Programming:
+    - Encourages immutability, side-effect-free operations, and higher-order functions.
+
+
+      
