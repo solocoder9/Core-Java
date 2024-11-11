@@ -29,19 +29,19 @@ Core Concepts of Stream API
 
 Key Benefits of Using Stream API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Declarative style:
+● Declarative style:
     - Focus on "what" you want to achieve, not "how".
 
-Chaining operation:
+● Chaining operation:
     - Multiple stream operations can be chained to express complex transformations.
 
-Parallel processing:
+● Parallel processing:
     - Built-in support for parallel streams to improve performance on multi-core systems.
 
-Cleaner code:
+● Cleaner code:
     - Reduces boilerplate code such as manual looping and conditional checks.
 
-Functional Programming:
+● Functional Programming:
     - Encourages immutability, side-effect-free operations, and higher-order functions.
 
 
