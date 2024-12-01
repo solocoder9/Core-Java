@@ -5,7 +5,7 @@ String
 - Internally, a 'String' is represented as an array of characters.
 - The 'String' class is immutable, meaning once a 'String' object is created, it cannot be 
   modified.
-- String values are defined useing double quotes("").
+- String values are defined using double quotes("").
 - Example: "Hello, World!"
 
 String object creation
