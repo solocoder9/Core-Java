@@ -1,0 +1,46 @@
+Terminal Operations
+-------------------
+- Terminal operations are operations that consume the stream and produce a result or
+  a side-effect. 
+- Once a terminal operation is executed, the stream is considered closed, and you 
+  can no longer use it.
+
+Characteristics
+- They trigger the processing of the stream.
+- Once a terminal operation is invoked, the stream is consumed and can't be reuses.
+
+● Common Terminal Operations:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+○ collect():
+    - Gathers the elements of the stream into a collections or another form. 
+    - Example:
+        Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
+        List<Integer> numberList = numbers.collect(Collectors.toList());
+        System.out.println(numberList);  // Prints [1, 2, 3, 4, 5]
+
+○ forEach():
+    - Performs an action on each element in the stream.
+    - Example:
+        Stream<String> names = Stream.of("Alice", "Bob", "Charlie");
+        names.forEach(System.out::println);  // Prints Alice, Bob, Charlie
+
+reduce():
+    - Combines elements of the stream into a single result (e.g., sum, product).
+    - Example:
+        Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
+        int sum = numbers.reduce(0, Integer::sum);
+        System.out.println(sum);  // Prints 15
+
+count():
+    - Returns the number of elements in the stream.
+    - Example:
+        Stream<String> names = Stream.of("Alice", "Bob", "Charlie");
+        long count = names.count();
+        System.out.println(count);  // Prints 3
+anyMatch(), allMatch(), noneMatch():
+    - These are used for checking conditions in the stream.
+    - Example:
+        Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
+        boolean hasEven = numbers.anyMatch(n -> n % 2 == 0);
+        System.out.println(hasEven);  // Prints true
+
