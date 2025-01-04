@@ -8,7 +8,7 @@ public class Test {
 
 /*
  * Explanation:
- *
+ * ------------
  * 1. The `final` keyword applied to the `StringBuffer` reference variable means that the reference `sb` 
  *    cannot be reassigned to point to a different `StringBuffer` object.
  *    - It does not make the `StringBuffer` object itself immutable.
