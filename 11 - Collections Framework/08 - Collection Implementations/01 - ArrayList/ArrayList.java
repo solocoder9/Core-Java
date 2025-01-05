@@ -1,6 +1,5 @@
 package ArrayList;
 
-//MyArrayList class to implement a dynamic array-like structure
 public class ArrayList {
     private Object[] array; // Array to hold the elements
     private int size; // Current number of elements in the array
