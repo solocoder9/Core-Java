@@ -1,6 +1,6 @@
 package ArrayList;
 
-//Main class to test the MyArrayList implementation
+// Main class to test the MyArrayList implementation
 public class Main {
 	public static void main(String[] args) {
 		ArrayList list = new ArrayList(); // Create a new MyArrayList
