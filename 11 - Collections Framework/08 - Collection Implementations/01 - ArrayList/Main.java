@@ -3,7 +3,9 @@ package ArrayList;
 // Main class to test the MyArrayList implementation
 public class Main {
     public static void main(String[] args) {
-        ArrayList list = new ArrayList(); // Create a new MyArrayList
+
+        // Creating a new ArrayList
+        ArrayList list = new ArrayList(); 
 
         // Adding elements to the list
         list.add("Hello");
