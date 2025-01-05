@@ -1,9 +1,9 @@
 package ArrayList;
 
 public class ArrayList {
-    private Object[] array; // Array to hold the elements
-    private int size; // Current number of elements in the array
-    private static final int DEFAULT_CAPACITY = 10; // Default capacity of the array
+    private Object[] array; 
+    private int size; 
+    private static final int DEFAULT_CAPACITY = 10; 
 
     // Constructor to initialize the array with the default capacity
     public ArrayList() {
