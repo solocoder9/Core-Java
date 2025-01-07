@@ -17,21 +17,15 @@ public class Main {
         System.out.println("Current LinkedList:");
         list.display();  // Output: World -> Hello -> Java -> Programming ->
 
-        System.out.println();
-
         // Add element at a specific index
         System.out.println("\nAdding element at index 2 (Middle):");
         list.addAt("Data Structures", 2);
         list.display();  // Output: World -> Hello -> Data Structures -> Java -> Programming ->
 
-        System.out.println();
-
         // Get first, last, and specific element
         System.out.println("\nFirst Element: " + list.getFirst()); // World
         System.out.println("Last Element: " + list.getLast()); // Programming
         System.out.println("Element at index 3: " + list.getAt(3)); // Java
-
-        System.out.println();
 
         // Remove elements
         System.out.println("\nRemoving first element: " + list.removeFirst());  // Output: World
