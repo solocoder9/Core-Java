@@ -1,4 +1,4 @@
-package LInkedList2;
+package linkedlist;
 
 public class Node {
     Object data; // Data in the node
