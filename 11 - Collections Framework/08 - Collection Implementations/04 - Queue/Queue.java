@@ -1,4 +1,4 @@
-package Queue;
+package queue;
 
 public class Queue {
     private Object[] array;  // Array to store elements
