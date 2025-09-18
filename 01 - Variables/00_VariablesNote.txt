@@ -1,6 +1,6 @@
 Variables
 ---------
-- A Variable is a data container that holds the data, and its values can be changed during the 
+- A Variable is a data container that holds the data values, which can be changed during the 
 program’s execution.
 - Every variable is associated with a data type, which specifies the type and size of values it 
 can store.
