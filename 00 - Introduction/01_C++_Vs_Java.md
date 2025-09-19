@@ -1,79 +1,26 @@
-+-------------------------+----------------------------------+----------------------------------+
-| Parameters              | C++                              | Java                             |
-+-------------------------+----------------------------------+----------------------------------+
-| Platform                | C++ is platform-dependent.       | Java is platform-independent.    |
-+-------------------------+----------------------------------+----------------------------------+
-| Mainly used for         | C++ is mainly used for system    | Java is mainly used for          |
-|                         | programming.                     | application programming. It is   |
-|                         |                                  | widely used in Windows-based,    |
-|                         |                                  | web-based, enterprise, and       |
-|                         |                                  | mobile applications.             |
-+-------------------------+----------------------------------+----------------------------------+
-| Compilation             | C++ is a compiled language.      | Java is considered both compiled |
-|                         |                                  | and interpreted.                 |
-+-------------------------+----------------------------------+----------------------------------+
-| Portability             | C++ does not support portability.| Java supports portability.       |
-+-------------------------+----------------------------------+----------------------------------+
-| Memory Management       | Memory management in C++ is      | Memory management in Java is     |
-|                         | manual.                          | system-controlled.               |
-+-------------------------+----------------------------------+----------------------------------+
-| Orientating             | C++ is both procedural and       | Java is a purely object-oriented |
-|                         | object-oriented programming      | programming language.            |
-+-------------------------+----------------------------------+----------------------------------+
-| Documentation           | C++ does not support             | Java supports documentation     |
-|                         | documentation comments for       | comments for source code.        |
-|                         | source code.                     |                                  |
-+-------------------------+----------------------------------+----------------------------------+
-| Go-to Keyword           | C++ supports the `goto` keyword. | Java does not support the `goto` |
-|                         |                                  | keyword.                         |
-+-------------------------+----------------------------------+----------------------------------+
-| Multiple Inheritance    | C++ supports both single and     | Java supports only single        |
-|                         | multiple inheritance.            | inheritance. Multiple inheritance|
-|                         |                                  | is achieved partially using      |
-|                         |                                  | interfaces.                      |
-+-------------------------+----------------------------------+----------------------------------+
-| Pointer Support         | C++ strongly supports pointers.  | Java has limited support for     |
-|                         |                                  | pointers.                        |
-+-------------------------+----------------------------------+----------------------------------+
-| Virtual Keyboard        | C++ supports virtual keyboard.   | Java does not support virtual    |
-|                         |                                  | keyboards.                       |
-+-------------------------+----------------------------------+----------------------------------+
-| Structure and Union     | C++ supports structures and      | Java does not support structures |
-|                         | unions.                          | and unions.                      |
-+-------------------------+----------------------------------+----------------------------------+
-| Thread support          | C++ does not have built-in       | Java has built-in thread support.|
-|                         | support for threads. It relies   |                                  |
-|                         | on third-party libraries for     |                                  |
-|                         | thread support.                  |                                  |
-+-------------------------+----------------------------------+----------------------------------+
-| Overloading             | C++ supports both method and     | Java supports only method        |
-|                         | operator overloading.            | overloading and does not support |
-|                         |                                  | operator overloading.            |
-+-------------------------+----------------------------------+----------------------------------+
-| Parameter Passing       | C++ supports both pass by value  | Java supports only pass by value |
-|                         | and pass by reference techniques.| technique.                       |
-+-------------------------+----------------------------------+----------------------------------+
-| Object management       | C++ supports manual object       | Java supports automatic object   |
-|                         | management using `new` & `delete`| management with garbage collection.|
-+-------------------------+----------------------------------+----------------------------------+
-| Libraries               | C++ has very limited libraries   | Java has more diverse libraries  |
-|                         | with low-level functionalities.  | with a wide range of classes for |
-|                         |                                  | various high-level services.     |
-+-------------------------+----------------------------------+----------------------------------+
-| Global Scope            | C++ supports both global scope   | Java does not support global     |
-|                         | and namespace scope.             | scope.                           |
-+-------------------------+----------------------------------+----------------------------------+
-| Hardware                | C++ is closer to hardware.       | Java is not so interactive with  |
-|                         |                                  | hardware.                        |
-+-------------------------+----------------------------------+----------------------------------+
-| Founder                 | C++ was founded by Bjarne.       | Java was founded by James        |
-|                         |                                  | Gosling.                         |
-+-------------------------+----------------------------------+----------------------------------+
-| try/catch block         | C++ can exclude the `try/catch`  | Java can’t exclude the `try/catch`|
-|                         | block.                           | block if the code is supposed to |
-|                         |                                  | throw an exception.              |
-+-------------------------+----------------------------------+----------------------------------+
-| Runtime error           | In C++, it is the programmer's   | In Java, it is the system's      |
-| Declaration             | responsibility to check the      | responsibility to check errors   |
-|                         | error.                           | in the program.                  |
-+-------------------------+----------------------------------+----------------------------------+
+# C++ vs Java
+
+| **Parameters**          | **C++**                                                                 | **Java**                                                                 |
+|--------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| **Platform**             | C++ is platform-dependent.                                             | Java is platform-independent.                                            |
+| **Mainly used for**      | C++ is mainly used for system programming.                             | Java is mainly used for application programming (Windows, web, enterprise, mobile). |
+| **Compilation**          | C++ is a compiled language.                                            | Java is considered both compiled and interpreted.                        |
+| **Portability**          | C++ does not support portability.                                      | Java supports portability.                                               |
+| **Memory Management**    | Memory management in C++ is manual.                                    | Memory management in Java is system-controlled.                          |
+| **Orientation**          | C++ is both procedural and object-oriented.                            | Java is a purely object-oriented programming language.                    |
+| **Documentation**        | C++ does not support documentation comments for source code.           | Java supports documentation comments for source code.                     |
+| **Goto Keyword**         | C++ supports the `goto` keyword.                                       | Java does not support the `goto` keyword.                                |
+| **Multiple Inheritance** | Supports both single and multiple inheritance.                         | Supports only single inheritance; multiple inheritance is achieved via interfaces. |
+| **Pointer Support**      | Strongly supports pointers.                                            | Limited support for pointers.                                            |
+| **Virtual Keyword**      | Supports virtual keyword.                                              | Does not support virtual keyword.                                        |
+| **Structure & Union**    | Supports structures and unions.                                        | Does not support structures and unions.                                  |
+| **Thread Support**       | No built-in support; relies on third-party libraries.                  | Has built-in thread support.                                             |
+| **Overloading**          | Supports method and operator overloading.                              | Supports only method overloading, not operator overloading.              |
+| **Parameter Passing**    | Supports both pass by value and pass by reference.                     | Supports only pass by value.                                             |
+| **Object Management**    | Manual (`new` & `delete`).                                             | Automatic (garbage collection).                                          |
+| **Libraries**            | Limited libraries with low-level functionalities.                      | Diverse libraries with a wide range of high-level services.              |
+| **Global Scope**         | Supports global scope and namespace scope.                             | Does not support global scope.                                           |
+| **Hardware**             | Closer to hardware.                                                    | Less interactive with hardware.                                          |
+| **Founder**              | Founded by **Bjarne Stroustrup**.                                      | Founded by **James Gosling**.                                            |
+| **try/catch Block**      | Can exclude the `try/catch` block.                                     | Must use `try/catch` if code throws a checked exception.                 |
+| **Runtime Error Handling** | Programmer’s responsibility to check errors.                          | System checks and handles runtime errors.                                |
