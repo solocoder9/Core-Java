@@ -95,6 +95,8 @@ If this repository helps you:
 
 ---
 
+<!--  
 ## 🔑 Keywords (SEO)
 
 Java tutorial, Learn Java, Core Java examples, Java notes, Java basics, Java OOP, Java collections, Java 8 features, Java multithreading, Java interview preparation, Java programs with source code.
+-->
