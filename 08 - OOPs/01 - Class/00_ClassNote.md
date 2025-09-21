@@ -1,0 +1,20 @@
+## Class in Java
+
+- A **class** is a blueprint or template that defines the properties (fields/attributes) and behaviors (methods) of objects.  
+- Basically, a class serves as a blueprint from which individual objects are created.  
+- It is a **logical entity**.  
+
+### Syntax
+```java
+[AccessModifiers] <AccessSpecifier> class className {
+    // fields
+    // methods
+}
+```
+
+### A class in Java contains:
+1. Fields  
+2. Methods  
+3. Constructors  
+4. Blocks  
+5. Nested classes  
