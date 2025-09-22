@@ -1,7 +1,7 @@
-- **Multithreading in Java**
+# Multithreading in Java
   - Multithreading allows concurrent execution of two or more threads, enabling efficient CPU utilization and better application performance.
 
-- **Key Concepts**
+## Key Concepts
   - **Thread**
     - A thread is a lightweight process, a separate path of execution in a program.  
 
