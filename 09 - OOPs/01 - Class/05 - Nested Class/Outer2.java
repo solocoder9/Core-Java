@@ -1,4 +1,4 @@
-// Inner Class / Non - static nasted class
+// Inner Class / Non - static nested class
 
 public class Outer2 {
     
@@ -45,7 +45,7 @@ public class Outer2 {
         // Accessing local Inner class
         ot.outerMethod();
 
-        // Accessing Anonumous inner class
+        // Accessing Anonymous inner class
         ot.anonymousInnerMethod();
     }
 }
