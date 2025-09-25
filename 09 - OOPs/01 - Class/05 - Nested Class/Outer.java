@@ -1,4 +1,4 @@
-// Static Nasted Class
+// Static Nested Class
 
 public class Outer {
     
@@ -12,7 +12,7 @@ public class Outer {
     }
 
     public static void main(String[] args) {
-        Outer.sNC nastedObject = new Outer.sNC();
-        nastedObject.display();
+        Outer.sNC nestedObject = new Outer.sNC();
+        nestedObject.display();
     }
 }
