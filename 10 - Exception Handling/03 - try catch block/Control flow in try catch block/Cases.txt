@@ -50,7 +50,7 @@ Execution:
     statement-2
     statement-3
     statement-5
-    (Abnormal termination)
+    (Normal termination)
 
 ================================================================
 Note:
