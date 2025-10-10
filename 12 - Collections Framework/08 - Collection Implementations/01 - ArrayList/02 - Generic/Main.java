@@ -19,8 +19,8 @@ public class Main {
         System.out.println("Element at index 1: " + list.get(1)); // Output: Java
 
         // Check if the list contains an element
-        System.out.println("List contains 'Java': " + list.contains("Java"));     // Output: true
-        System.out.println("List contains 'GPT': " + list.contains("GPT"));       // Output: false
+        System.out.println("List contains 'Java': " + list.contains("Java")); // Output: true
+        System.out.println("List contains 'GPT': " + list.contains("GPT"));   // Output: false
 
         // Remove an element at a specific index
         list.remove(2); // Removes "Hibernate"
