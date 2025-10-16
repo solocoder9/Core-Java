@@ -43,8 +43,13 @@ public class ArrayList {
     // Method to check if the array list contains a specific element
     public boolean contains(Object element) {
         for (int i = 0; i < size; i++) {
-            if (array[i].equals(element)) {
-                return true; // If element is found, return true
+
+            // Avoid NullPointerException by handling null values explicitly
+            if (element == null && data[i] == null) {
+                return true;
+            }
+            if (element != null && element.equals(data[i])) {
+                return true;
             }
         }
         return false; // If element is not found, return false
