@@ -1,33 +1,32 @@
 class Singleton {
-    // The single instance of the class
-    private static Singleton instance;
+	// The single instance of the class
+	private static Singleton instance;
 
-    // Private constructor to prevent instantiation
-    private Singleton() {
-    }
+	// Private constructor to prevent instantiation
+	private Singleton() {
+	}
 
-    // Static method to get the instance of the class
-    // Non-thread-safe, lazy initialization
-    public static Singleton getInstance() {
-        if (instance == null) {
-            instance = new Singleton();
-        }
-        return instance;
-    }
+	// Static method to get the instance of the class
+	// Non-thread-safe, lazy initialization
+	public static Singleton getInstance() {
+		if (instance == null) {
+			instance = new Singleton();
+		}
+		return instance;
+	}
 
-    // Example method
-    public void showMessage() {
-        System.out.println("Hello from Singleton!");
-    }
+	// Example method
+	public void showMessage() {
+		System.out.println("Hello from Singleton!");
+	}
 }
 
 public class Main {
-    public static void main(String[] args) {
-        // Get the only instance of Singleton
-        Singleton singleton = Singleton.getInstance();
+	public static void main(String[] args) {
+		// Get the only instance of Singleton
+		Singleton singleton = Singleton.getInstance();
 
-        // Show message
-        singleton.showMessage();
-    }
+		// Show message
+		singleton.showMessage();
+	}
 }
-16 - Design Patterns/01 - Singleton Pattern/Example Codes/02 - Thread-safe/Main.java
