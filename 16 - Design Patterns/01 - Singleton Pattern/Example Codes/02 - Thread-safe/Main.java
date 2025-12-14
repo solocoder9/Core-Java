@@ -7,11 +7,16 @@ class Singleton {
     }
 
     // Static method to get the instance of the class
-    // Non-thread-safe, lazy initialization
+    // Thread-safe, lazy initialization
     public static Singleton getInstance() {
-        if (instance == null) {
-            instance = new Singleton();
+        if (instance == null) { // First check (no locking)
+            synchronized (Singleton.class) {
+                if (instance == null) { // Second check (with locking)
+                    instance = new Singleton();
+                }
+            }
         }
+
         return instance;
     }
 
@@ -30,4 +35,3 @@ public class Main {
         singleton.showMessage();
     }
 }
-16 - Design Patterns/01 - Singleton Pattern/Example Codes/02 - Thread-safe/Main.java
